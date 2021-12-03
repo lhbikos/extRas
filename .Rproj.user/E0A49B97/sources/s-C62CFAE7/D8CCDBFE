@@ -3,7 +3,7 @@
     "path": "C:/Users/lhbikos/OneDrive - Seattle Pacific University/ReCenterPsychStats/extRas/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "190405903",
+    "hash": "4018148413",
     "contents": "",
     "dirty": false,
     "created": 1638559080856.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "6,174",
-        "scrollLine": "0"
+        "cursorPosition": "48,1",
+        "scrollLine": "22"
     },
     "folds": "",
-    "lastKnownWriteTime": 1638560647,
+    "lastKnownWriteTime": 1638560925,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1638560647814,
+    "last_content_update": 1638560925283,
     "read_only": false,
     "read_only_alternatives": []
 }
