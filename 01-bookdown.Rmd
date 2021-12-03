@@ -1,0 +1,84 @@
+# THE MECHANICS BEHIND THE OER {-}
+
+# From *bookdown* to GitHub Pages {#book1}
+
+[Screencast Link](https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=7c20cc56-069a-40e2-abc7-adf3017f8c47)
+
+*ReCentering Psych Stats* volumes are all created with a combination of R, R Studio, bookdown (the package), the GitHub, GitHub Desktop, GitHub Pages, and a host of packages. There is abundant information on all of these tools across the internet. In this lesson, I walk through the steps in creating the templated [bookdown](https://bookdown.org/) "book" using Yihui Xie's package and process.
+
+*Note. If you are at an institution like mine and you have an enterprise-issued computer it may matter whether your R projects are on your local drive or a cloud-drive. At SPU it is possible to use R Studio with .rmd files and such on the local drive. But they will only knit if the projects are on the OneDrive directlry.*
+
+## Creating a *bookdown* template
+
+Before beginning the process, make sure you have installed bookdown:
+
+```{r}
+#install.packages("bookdown", dependencies = T)
+```
+
+Additionally, know in advance where (i.e., the parent folder) you want the book to be located. With this in mind:
+
+1. Open R Studio
+2. Under the "File" menu select
+   - New Project (if prompted, you do not need to save the workspace image, although you may wish to save any files that you have worked on)
+   - New Directory
+   - Book project using *bookdown*
+3. In the New Project Wizard
+   - The "Directory name" will be both the project name and the name of the folder that houses all the bookdown parts and pieces. In my example "xtRas" is what I entered in "Directory name."
+   - Use the "Browse" button to navigate to the parent folder. In my example, I selected "C/Users/myaccount/OneDrive - InstitutionName/ReCenterPsychStats"
+   - Create Project
+
+Once created, your project folder will be pre-populated with a number of objects that will serve as tutorials and templates for your work.
+
+## Establishing an Output Directory (needed to publish on GitHub Pages)
+
+If your goal is to present your book through the free webpages of GitHub Pages it is necessary to update some yml matter.  Specifically, navigate to the "_bookdown.yml" and edit it by adding script that will route the webpages (and their structure) to a folder titled "docs". In total, the entirety of script in my "_bookdown.yml" is this:
+
+
+book_filename: "ReC_extRas"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+output_dir: "docs"
+
+## The *index.Rmd* File is First
+
+In this section of the tutorial, I navigate to the "index.Rmd" file and merely change the .yml matter related to the title and author so that when we render the book to GitHub Pages we can see that it was, in fact, this project that was rendered.  
+
+## Build the Book!
+
+To build the book select the "Build" tab from the upper right hand box in R Studio.  Within that tab, select "Build Book." You can find the rendered book in the docs folder (which it created automatically if you added the command to the *_bookdown.yml* file). Select any of the html files and it will show you the built book.
+
+## Send it to the GitHub
+
+Using the GitHub Pages means that you also have a [GitHub](https://github.com) account. If you haven't already, register for an account. Additionally, make sure to download, install and open [GitHub Desktop](https://desktop.github.com/).  
+
+Very briefly (because there is so much more), the GitHub is an open source community where you can (freely) create repositories and collaborate on them. The GitHub Desktop allows you to clone your repositories to your local environment, work on them, and then update the GitHub repository. In our case, we are starting with the bookdown R project on our local computer and turning it into a GitHub Repository. From this GitHub repo, it will be pushed to GitHub Pages.
+
+1. Open GitHub Desktop
+2. Under the "File" menu, select
+   - Add local repository
+   - With the "Choose" tool, navigate to the the folder that holds the bookdown project (in my case it was "extRas")
+   - GitHub Desktop is smart and recognizes that it is not a Git repository. For now it has been working for me to select "create a repository" and use the GitHub Desktop defaults
+3. Selct "Publish repository"
+   - Optional to add a description
+   
+## Publish on GitHub Pages
+
+Publishing the bookdown project to GitHub pages implies that you have aleady changed the "_bookdown.yml" script to include the *output_dir: "docs"* 
+
+Select "Settings." Scroll to the bottom, to the "Danger Zone" to make sure that the repository is public. If not, select "Change visibility" and select "Make Public."
+
+Still in settings, select "Pages" (menu bar on left). 
+
+* Under "Source" select:  
+  - Branch: main
+  - /docs
+  - save
+
+After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: https:/YOURACCOUNT.github.io/YOURPROJECT/
+
+
+   
+

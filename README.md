@@ -1,13 +1,1 @@
-Welcome! 
-
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
-
-This template provides a skeleton file structure that you can edit to create your book. 
-
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
-
-Additional resources:
-
-The **bookdown** book: https://bookdown.org/yihui/bookdown/
-
-The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown
+"extRas" is a mini-volume in the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily in the regular volumes (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting in that they have a specific use-case for graduate students in psychology programs at our institution.

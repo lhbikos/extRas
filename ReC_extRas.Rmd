@@ -16,7 +16,8 @@ github-repo: rstudio/bookdown-demo
 # BOOK COVER {-}
 
 ![An image of the book cover. It includes four quadrants of non-normal distributions representing gender, race/ethnicty, sustainability/global concerns, and journal articles](images/ReCenterPsychStats-extRas-bookcover.png)
-# Preface {-}
+
+# PREFACE {-}
 
 **If you are viewing this document, you should know that this is a book-in-progress.  Early drafts are released for the purpose teaching my classes and gaining formative feedback from a host of stakeholders. The document was last updated on `r format (Sys.Date(), '%d %b %Y')`**.  Emerging volumes on other statistics are posted on the [ReCentering Psych Stats](https://lhbikos.github.io/BikosRVT/ReCenter.html) page at my research team's website. 
 
@@ -47,13 +48,13 @@ A [GitHub open-source repository](https://github.com/lhbikos/ReC_Psychometrics) 
 
 # ACKNOWLEDGEMENTS {-}
 
-As a doctoral student at the University of Kansas (1992-2005), I learned that "a foreign language" was required for graduation. *Please note that as one who studies the intersections of global, vocational, and sustainable psychology, I regret that I do not have language skills beyond English.* This could have been met with credit from high school my rural, mid-Missouri high school did not offer such classes. This requirement would have typically been met with courses taken during an undergraduate program -- but my non-teaching degree in the University of Missouri's School of Education was exempt from this. The requirement could have also been met with a computer language (fortran, C++) -- I did not have any of those either. There was a tiny footnote on my doctoral degree plan that indicated that a 2-credit course, "SPSS for Windows" would substitute for the language requirement.  Given that it was taught by my one of my favorite professors, I readily signed up. As it turns out, Samuel B. Green, PhD, was using the course to draft chapters in the textbook [@green_using_2014] that has been so helpful for so many. Unfortunately, Drs. Green (1947 - 2018) and Salkind (2947 - 2017) are no longer with us. I have worn out numerous versions of their text. Another favorite text of mine was Dr. Barbara Byrne's [-@byrne_structural_2016], "Structural Equation Modeling with AMOS." I loved the way she worked through each problem and paired it with a published journal article, so that the user could see how the statistical evaluation fit within the larger project/article. I took my tea-stained text with me to a workshop she taught at APA and was proud of the signature she added to it (a little catfur might have fallen out).  Dr. Byrne created SEM texts for a number of statistical programs (e.g., LISREL, EQS, MPlus). As I was learning R, I wrote Dr. Byrne, asking if she had an edition teaching SEM/CFA with R. She promptly wrote back, saying that she did not have the bandwidth to learn a new statistics package.  We lost Dr. Byrne in December 2020. I am so grateful to these role models for their contributions to my statistical training.  I am also grateful for the doctoral students who have taken my courses and are continuing to provide input for how to improve the materials.
+As a doctoral student at the University of Kansas (1992-2005), I learned that "a foreign language" was a graduation requirement. *Please note that as one who studies the intersections of global, vocational, and sustainable psychology, I regret that I do not have language skills beyond English.* This could have been met with credit from high school my rural, mid-Missouri high school did not offer such classes. This requirement would have typically been met with courses taken during an undergraduate program -- but my non-teaching degree in the University of Missouri's School of Education was exempt from this. The requirement could have also been met with a computer language (fortran, C++) -- I did not have any of those either. There was a tiny footnote on my doctoral degree plan that indicated that a 2-credit course, "SPSS for Windows" would substitute for the language requirement.  Given that it was taught by my one of my favorite professors, I readily signed up. As it turns out, Samuel B. Green, PhD, was using the course to draft chapters in the textbook [@green_using_2014] that has been so helpful for so many. Unfortunately, Drs. Green (1947 - 2018) and Salkind (2947 - 2017) are no longer with us. I have worn out numerous versions of their text. Another favorite text of mine was Dr. Barbara Byrne's [-@byrne_structural_2016], "Structural Equation Modeling with AMOS." I loved the way she worked through each problem and paired it with a published journal article, so that the user could see how the statistical evaluation fit within the larger project/article. I took my tea-stained text with me to a workshop she taught at APA and was proud of the signature she added to it (a little catfur might have fallen out).  Dr. Byrne created SEM texts for a number of statistical programs (e.g., LISREL, EQS, MPlus). As I was learning R, I wrote Dr. Byrne, asking if she had an edition teaching SEM/CFA with R. She promptly wrote back, saying that she did not have the bandwidth to learn a new statistics package.  We lost Dr. Byrne in December 2020. I am so grateful to these role models for their contributions to my statistical training.  I am also grateful for the doctoral students who have taken my courses and are continuing to provide input for how to improve the materials.
 
 The inspiration for training materials that re*center statistics and research methods came from the [Academics for Black Survival and Wellness Initiative](https://www.academics4blacklives.com/). This project, co-founded by Della V. Mosley, Ph.D., and Pearis L. Bellamy, M.S., made clear the necessity and urgency for change in higher education and the profession of psychology. 
 
 At very practical levels, I am indebted to SPU's Library, and more specifically, SPU's Education, Technology, and Media Department.  Assistant Dean for Instructional Design and Emerging Technologies, R. John Robertson, MSc, MCS, has offered unlimited consultation, support, and connection. Senior Instructional Designer in Graphics & Illustrations, Dominic Wilkinson, designed the logo and bookcover.  Psychology and Scholarly Communications Librarian, Kristin Hoffman, MLIS, has provided consultation on topics ranging from OERS to citations. I am alo indebted to Associate Vice President, Teaching and Learning at Kwantlen Polytechnic University, Rajiv Jhangiani, PhD. Dr. Jhangiani's text [-@jhangiani_research_2019] was the first OER I ever used and I was grateful for his encouraging conversation.
 
-Financial support for this project has been provided the following grants:
+Financial support for this project has been provided the following:
 
 *  *Call to Action on Equity, Inclusion, Diversity, Justice, and Social Responsivity Request for Proposals* grant from the Association of Psychology Postdoctoral and Internship Centers (2021-2022). 
 *  *Diversity Seed Grant*, Office of Inclusive Excellence and Advisory Council for Diversity and Reconciliation (ACDR), Seattle Pacific University.
@@ -69,160 +70,90 @@ knitr::write_bib(c(
 
 <!--chapter:end:index.Rmd-->
 
-# Hello bookdown 
+# THE MECHANICS BEHIND THE OER {-}
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+# From *bookdown* to GitHub Pages {#book1}
 
-## A section
+[Screencast Link](https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=7c20cc56-069a-40e2-abc7-adf3017f8c47)
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+*ReCentering Psych Stats* volumes are all created with a combination of R, R Studio, bookdown (the package), the GitHub, GitHub Desktop, GitHub Pages, and a host of packages. There is abundant information on all of these tools across the internet. In this lesson, I walk through the steps in creating the templated [bookdown](https://bookdown.org/) "book" using Yihui Xie's package and process.
 
-### An unnumbered section {-}
+*Note. If you are at an institution like mine and you have an enterprise-issued computer it may matter whether your R projects are on your local drive or a cloud-drive. At SPU it is possible to use R Studio with .rmd files and such on the local drive. But they will only knit if the projects are on the OneDrive directlry.*
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+## Creating a *bookdown* template
 
-<!--chapter:end:01-intro.Rmd-->
+Before beginning the process, make sure you have installed bookdown:
 
-# Cross-references {#cross}
-
-Cross-references make it easier for your readers to find and link to elements in your book.
-
-## Chapters and sub-chapters
-
-There are two steps to cross-reference any heading:
-
-1. Label the heading: `# Hello world {#nice-label}`. 
-    - Leave the label off if you like the automated heading generated based on your heading title: for example, `# Hello world` = `# Hello world {#hello-world}`.
-    - To label an un-numbered heading, use: `# Hello world {-#nice-label}` or `{# Hello world .unnumbered}`.
-
-1. Next, reference the labeled heading anywhere in the text using `\@ref(nice-label)`; for example, please see Chapter \@ref(cross). 
-    - If you prefer text as the link instead of a numbered reference use: [any text you want can go here](#cross).
-
-## Captioned figures and tables
-
-Figures and tables *with captions* can also be cross-referenced from elsewhere in your book using `\@ref(fig:chunk-label)` and `\@ref(tab:chunk-label)`, respectively.
-
-See Figure \@ref(fig:nice-fig).
-
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
+```{r}
+#install.packages("bookdown", dependencies = T)
 ```
 
-Don't miss Table \@ref(tab:nice-tab).
+Additionally, know in advance where (i.e., the parent folder) you want the book to be located. With this in mind:
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(pressure, 10), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+1. Open R Studio
+2. Under the "File" menu select
+   - New Project (if prompted, you do not need to save the workspace image, although you may wish to save any files that you have worked on)
+   - New Directory
+   - Book project using *bookdown*
+3. In the New Project Wizard
+   - The "Directory name" will be both the project name and the name of the folder that houses all the bookdown parts and pieces. In my example "xtRas" is what I entered in "Directory name."
+   - Use the "Browse" button to navigate to the parent folder. In my example, I selected "C/Users/myaccount/OneDrive - InstitutionName/ReCenterPsychStats"
+   - Create Project
 
-<!--chapter:end:02-cross-refs.Rmd-->
+Once created, your project folder will be pre-populated with a number of objects that will serve as tutorials and templates for your work.
 
-# Parts
+## Establishing an Output Directory (needed to publish on GitHub Pages)
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file. 
-
-Add a numbered part: `# (PART) Act one {-}` (followed by `# A chapter`)
-
-Add an unnumbered part: `# (PART\*) Act one {-}` (followed by `# A chapter`)
-
-Add an appendix as a special kind of un-numbered part: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers.
+If your goal is to present your book through the free webpages of GitHub Pages it is necessary to update some yml matter.  Specifically, navigate to the "_bookdown.yml" and edit it by adding script that will route the webpages (and their structure) to a folder titled "docs". In total, the entirety of script in my "_bookdown.yml" is this:
 
 
+book_filename: "ReC_extRas"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+output_dir: "docs"
+
+## The *index.Rmd* File is First
+
+In this section of the tutorial, I navigate to the "index.Rmd" file and merely change the .yml matter related to the title and author so that when we render the book to GitHub Pages we can see that it was, in fact, this project that was rendered.  
+
+## Build the Book!
+
+To build the book select the "Build" tab from the upper right hand box in R Studio.  Within that tab, select "Build Book." You can find the rendered book in the docs folder (which it created automatically if you added the command to the *_bookdown.yml* file). Select any of the html files and it will show you the built book.
+
+## Send it to the GitHub
+
+Using the GitHub Pages means that you also have a [GitHub](https://github.com) account. If you haven't already, register for an account. Additionally, make sure to download, install and open [GitHub Desktop](https://desktop.github.com/).  
+
+Very briefly (because there is so much more), the GitHub is an open source community where you can (freely) create repositories and collaborate on them. The GitHub Desktop allows you to clone your repositories to your local environment, work on them, and then update the GitHub repository. In our case, we are starting with the bookdown R project on our local computer and turning it into a GitHub Repository. From this GitHub repo, it will be pushed to GitHub Pages.
+
+1. Open GitHub Desktop
+2. Under the "File" menu, select
+   - Add local repository
+   - With the "Choose" tool, navigate to the the folder that holds the bookdown project (in my case it was "extRas")
+   - GitHub Desktop is smart and recognizes that it is not a Git repository. For now it has been working for me to select "create a repository" and use the GitHub Desktop defaults
+3. Selct "Publish repository"
+   - Optional to add a description
+   
+## Publish on GitHub Pages
+
+Publishing the bookdown project to GitHub pages implies that you have aleady changed the "_bookdown.yml" script to include the *output_dir: "docs"* 
+
+Select "Settings." Scroll to the bottom, to the "Danger Zone" to make sure that the repository is public. If not, select "Change visibility" and select "Make Public."
+
+Still in settings, select "Pages" (menu bar on left). 
+
+* Under "Source" select:  
+  - Branch: main
+  - /docs
+  - save
+
+After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: https:/YOURACCOUNT.github.io/YOURPROJECT/
 
 
-<!--chapter:end:03-parts.Rmd-->
-
-# Footnotes and citations 
-
-## Footnotes
-
-Footnotes are put inside the square brackets after a caret `^[]`. Like this one ^[This is a footnote.]. 
-
-## Citations
-
-Reference items in your bibliography file(s) using `@key`.
-
-For example, we are using the **bookdown** package [@R-bookdown] (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and **knitr** [@xie2015] (this citation was added manually in an external file book.bib). 
-Note that the `.bib` files need to be listed in the index.Rmd with the YAML `bibliography` key.
+   
 
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: <https://rstudio.github.io/visual-markdown-editing/#/citations>
-
-<!--chapter:end:04-citations.Rmd-->
-
-# Blocks
-
-## Equations
-
-Here is an equation.
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  (\#eq:binom)
-\end{equation} 
-
-You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
-
-
-## Theorems and proofs
-
-Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri).
-
-::: {.theorem #tri}
-For a right triangle, if $c$ denotes the *length* of the hypotenuse
-and $a$ and $b$ denote the lengths of the **other** two sides, we have
-$$a^2 + b^2 = c^2$$
-:::
-
-Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>.
-
-## Callout blocks
-
-
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html
-
-<!--chapter:end:05-blocks.Rmd-->
-
-# Sharing your book
-
-## Publishing
-
-HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
-
-## 404 pages
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
-
-## Metadata for sharing
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
-
-
-
-This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
-
-Read more about the features of this output format here:
-
-https://pkgs.rstudio.com/bookdown/reference/gitbook.html
-
-Or use:
-
-```{r eval=FALSE}
-?bookdown::gitbook
-```
-
-
-
-<!--chapter:end:06-share.Rmd-->
-
-`r if (knitr::is_html_output()) '
-# References {-}
-'`
-
-<!--chapter:end:07-references.Rmd-->
+<!--chapter:end:01-bookdown.Rmd-->
 
