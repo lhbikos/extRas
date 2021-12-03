@@ -1,7 +1,7 @@
-h1:about About
-h2:usage Usage
-h2:render-book Render book
-h2:preview-book Preview book
+h1:book-cover BOOK COVER
+h1:preface Preface
+h2:copyright-with-open-access Copyright with Open Access
+h1:acknowledgements ACKNOWLEDGEMENTS
 h1:hello-bookdown Hello bookdown
 h2:a-section A section
 h3:an-unnumbered-section An unnumbered section
