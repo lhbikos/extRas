@@ -1,16 +1,14 @@
 --- 
-title: "ReCentering Psych Stats:e xtRas"
+title: "ReCentering Psych Stats: extRas"
 author: "Lynette H. Bikos, PhD, ABPP"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+bibliography: STATSnMETH.bib #This is my own bibtex file from my Zotero account. If this file is not in the project folder there will be an error and the book will not build.
+url: https://lhbikos.github.io/extRas/ #a link to the GitHub pages where it is rencered
+cover-image: images/ReCenterPsychStats-extRas-bookcover.png #link to the image for the book
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  "extRas" is a mini-volume in the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily in the regular volumes (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting in that they have a specific use-case for graduate students in psychology programs at our institution.
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
