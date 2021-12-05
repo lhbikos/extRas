@@ -24,7 +24,7 @@
 <meta name="author" content="Lynette H. Bikos, PhD, ABPP" />
 
 
-<meta name="date" content="2021-12-04" />
+<meta name="date" content="2021-12-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -174,6 +174,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="book1.html"><a href="book1.html#build-the-book"><i class="fa fa-check"></i><b>1.4</b> Build the Book!</a></li>
 <li class="chapter" data-level="1.5" data-path="book1.html"><a href="book1.html#send-it-to-the-github"><i class="fa fa-check"></i><b>1.5</b> Send it to the GitHub</a></li>
 <li class="chapter" data-level="1.6" data-path="book1.html"><a href="book1.html#publish-on-github-pages"><i class="fa fa-check"></i><b>1.6</b> Publish on GitHub Pages</a></li>
+<li class="chapter" data-level="1.7" data-path="book1.html"><a href="book1.html#pdf-and-epub-compilations"><i class="fa fa-check"></i><b>1.7</b> PDF and epub Compilations</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="formatting-the-book.html"><a href="formatting-the-book.html"><i class="fa fa-check"></i><b>2</b> Formatting the Book</a>
 <ul>
@@ -186,6 +187,7 @@ div.csl-indent {
 <li class="chapter" data-level="2.2.4" data-path="formatting-the-book.html"><a href="formatting-the-book.html#adding-images"><i class="fa fa-check"></i><b>2.2.4</b> Adding images</a></li>
 <li class="chapter" data-level="2.2.5" data-path="formatting-the-book.html"><a href="formatting-the-book.html#creating-a-table-from-within-the-.rmd-file"><i class="fa fa-check"></i><b>2.2.5</b> Creating a Table from within the .rmd file</a></li>
 <li class="chapter" data-level="2.2.6" data-path="formatting-the-book.html"><a href="formatting-the-book.html#equations"><i class="fa fa-check"></i><b>2.2.6</b> Equations</a></li>
+<li class="chapter" data-level="2.2.7" data-path="formatting-the-book.html"><a href="formatting-the-book.html#building-and-knitting"><i class="fa fa-check"></i><b>2.2.7</b> Building and Knitting</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -211,8 +213,9 @@ div.csl-indent {
 <div id="book1" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> From <em>bookdown</em> to GitHub Pages</h1>
 <p><a href="https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=7c20cc56-069a-40e2-abc7-adf3017f8c47">Screencast Link</a></p>
-<p><em>ReCentering Psych Stats</em> volumes are all created with a combination of R, R Studio, bookdown (the package), the GitHub, GitHub Desktop, GitHub Pages, and a host of packages. There is abundant information on all of these tools across the internet. In this lesson, I walk through the steps in creating the templated <a href="https://bookdown.org/">bookdown</a> “book” using Yihui Xie’s package and process.</p>
-<p><em>Note. If you are at an institution like mine and you have an enterprise-issued computer it may matter whether your R projects are on your local drive or a cloud-drive. At SPU it is possible to use R Studio with .rmd files and such on the local drive. But they will only knit if the projects are on the OneDrive directlry.</em></p>
+<p><em>ReCentering Psych Stats</em> volumes are all created with a combination of R, R Studio, bookdown (the package), the GitHub, GitHub Desktop, GitHub Pages, and a host of packages. There is abundant information on all of these tools across the internet. In this lesson, I walk through the steps in creating the templated <a href="https://bookdown.org/">bookdown</a> “book” using Yihui Xie’s <em>bookdown</em> package and processes. Two regularly updated sources <span class="citation">(<a href="#ref-xie_authoring_2021" role="doc-biblioref">Xie, 2021</a>; <a href="#ref-xie_r_2021" role="doc-biblioref">Xie et al., 2021</a>)</span> provide a strong foundation to this process. Additionally, a quick internet search will yield additional resources for examples, unique circumstances, and idea generation. At the outset, please know that the instructions I provide is based on my experience with my projects and the work that we do in my research team. It is quite possible they will not be as applicable in other contexts.</p>
+<p>As I have continued in this journey of learning R, teaching R, and creating an open education resource, I have consulted and relied upon many resources beyond. Visiting the GitHub repository of two resources have been especially useful in gaining these skills. After struggling to comprehend some of the instructions in the <em>bookdown</em> source materials I happened upon a chapter in Dougherty’s, <a href="https://ontheline.trincoll.edu/">On The Line: How Schooling, Housing, and Civil Rights Shaped Hartford and its Suburbs</a>. I was first drawn to a closing chapter in this open-access digital book that described Dougherty’s <span class="citation">(<a href="#ref-dougherty_chapter_2021" role="doc-biblioref">2021</a>)</span> use of <em>bookdwn</em>, the GitHub, and GitHub pages. When I realized that this project was entirely available on a <a href="https://github.com/OnTheLine/otl-bookdown">GitHub repo</a>, I learned that I could visit, inspect, and clone (i.e., make a copy of the GitHub repository) of this project. Soon after, I also learned that Navarro’s <span class="citation">(<a href="#ref-navarro_book_2020" role="doc-biblioref">Navarro, 2020</a>)</span> <a href="https://learningstatisticswithr.com/">Learning Statistics with R</a> was also available in a <a href="https://github.com/djnavarro/rbook">GitHub repo</a>. Together, the original R Markdown and bookdown training materials plus the two enacted examples were a tremendous resources of potential solutions I could try. For example, on one frustrating day, I could not get my book to build. I cloned Dougherty’s OTL, opened his project on my laptop, and asked the project to build. When it did (flawlessly), I copied and adapted his code (I recall my struggles were in the YAML matter atop the index.rmd) until I could get my project to work. Until very recently, you could still see “otl” references in hashtagged out lines of code in some of the early volumes of ReCentering.</p>
+<p><em>Note. If you are at an institution like mine and you have an enterprise-issued computer it may matter whether your R projects are on your local drive or a cloud-drive. At SPU it is possible to use R Studio with .rmd files and such on the local drive. But they will only knit if the projects are on the OneDrive directory.</em></p>
 <div id="creating-a-bookdown-template" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Creating a <em>bookdown</em> template</h2>
 <p>Before beginning the process, make sure you have installed bookdown:</p>
@@ -285,8 +288,47 @@ output_dir: “docs”</p>
 </ul></li>
 </ul>
 <p>After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: <a href="https:/YOURACCOUNT.github.io/YOURPROJECT/" class="uri">https:/YOURACCOUNT.github.io/YOURPROJECT/</a></p>
+</div>
+<div id="pdf-and-epub-compilations" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> PDF and epub Compilations</h2>
+<p>It has taken me quite some time to figure out compilation as a PDF. There seem to be a couple of elements that make it successful. First, it is essential to have the tinytex package installed. Use this two-part code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="book1.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&#39;tinytex&#39;)</span></span>
+<span id="cb2-2"><a href="book1.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#tinytex::install_tinytex()</span></span></code></pre></div>
+<p>Second, inspect the “_output.yml” content.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="book1.html#cb3-1" aria-hidden="true" tabindex="-1"></a>bookdown<span class="sc">::</span>gitbook<span class="sc">:</span></span>
+<span id="cb3-2"><a href="book1.html#cb3-2" aria-hidden="true" tabindex="-1"></a>  css<span class="sc">:</span> style.css</span>
+<span id="cb3-3"><a href="book1.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  config<span class="sc">:</span></span>
+<span id="cb3-4"><a href="book1.html#cb3-4" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span></span>
+<span id="cb3-5"><a href="book1.html#cb3-5" aria-hidden="true" tabindex="-1"></a>      before<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb3-6"><a href="book1.html#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="er">&lt;</span>li<span class="sc">&gt;</span><span class="er">&lt;</span>a href<span class="ot">=</span><span class="st">&quot;./&quot;</span><span class="sc">&gt;</span>ReCentering Psych Stats extRas<span class="sc">&lt;</span><span class="er">/</span>a<span class="sc">&gt;</span><span class="er">&lt;/</span>li<span class="sc">&gt;</span></span>
+<span id="cb3-7"><a href="book1.html#cb3-7" aria-hidden="true" tabindex="-1"></a>      after<span class="sc">:</span> <span class="er">|</span></span>
+<span id="cb3-8"><a href="book1.html#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="er">&lt;</span>li<span class="sc">&gt;</span><span class="er">&lt;</span>a href<span class="ot">=</span><span class="st">&quot;https://github.com/rstudio/bookdown&quot;</span> target<span class="ot">=</span><span class="st">&quot;blank&quot;</span><span class="sc">&gt;</span>Published with bookdown<span class="sc">&lt;</span><span class="er">/</span>a<span class="sc">&gt;</span><span class="er">&lt;/</span>li<span class="sc">&gt;</span></span>
+<span id="cb3-9"><a href="book1.html#cb3-9" aria-hidden="true" tabindex="-1"></a>    edit<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>USERNAME<span class="sc">/</span>REPO<span class="sc">/</span>edit<span class="sc">/</span>BRANCH<span class="sc">/</span>%s</span>
+<span id="cb3-10"><a href="book1.html#cb3-10" aria-hidden="true" tabindex="-1"></a>    download<span class="sc">:</span> [<span class="st">&quot;pdf&quot;</span>, <span class="st">&quot;epub&quot;</span>]</span>
+<span id="cb3-11"><a href="book1.html#cb3-11" aria-hidden="true" tabindex="-1"></a>bookdown<span class="sc">::</span>pdf_book<span class="sc">:</span></span>
+<span id="cb3-12"><a href="book1.html#cb3-12" aria-hidden="true" tabindex="-1"></a>  includes<span class="sc">:</span></span>
+<span id="cb3-13"><a href="book1.html#cb3-13" aria-hidden="true" tabindex="-1"></a>    in_header<span class="sc">:</span> preamble.tex</span>
+<span id="cb3-14"><a href="book1.html#cb3-14" aria-hidden="true" tabindex="-1"></a>  latex_engine<span class="sc">:</span> xelatex</span>
+<span id="cb3-15"><a href="book1.html#cb3-15" aria-hidden="true" tabindex="-1"></a>  citation_package<span class="sc">:</span> natbib</span>
+<span id="cb3-16"><a href="book1.html#cb3-16" aria-hidden="true" tabindex="-1"></a>  keep_tex<span class="sc">:</span> yes</span>
+<span id="cb3-17"><a href="book1.html#cb3-17" aria-hidden="true" tabindex="-1"></a>bookdown<span class="sc">::</span>epub_book<span class="sc">:</span> default</span></code></pre></div>
+<p>As you can see, the default instructions from the <em>bookdown</em> template include both pdf and epub formats. You can retrieve them from the docs folder.</p>
 
-<p><a href="link">Screencast Link</a></p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-dougherty_chapter_2021" class="csl-entry">
+Dougherty, J. (2021). <em>Chapter 9 <span>Mapping</span> and <span>Publishing</span> <span>On</span> <span>The</span> <span>Line</span> <span></span> <span>On</span> <span>The</span> <span>Line</span>: <span>How</span> <span>Schooling</span>, <span>Housing</span>, and <span>Civil</span> <span>Rights</span> <span>Shaped</span> <span>Hartford</span> and its <span>Suburbs</span></em>. <a href="http://ontheline.trincoll.edu/">http://ontheline.trincoll.edu/</a>
+</div>
+<div id="ref-navarro_book_2020" class="csl-entry">
+Navarro, D. (2020). <em>Book: <span>Learning</span> <span>Statistics</span> with <span>R</span> - <span>A</span> tutorial for <span>Psychology</span> <span>Students</span> and other <span>Beginners</span></em>. Open Education Resource (OER) LibreTexts Project. <a href="https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)">https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)</a>
+</div>
+<div id="ref-xie_authoring_2021" class="csl-entry">
+Xie, Y. (2021). <em>Authoring <span>Books</span> and <span>Technical</span> <span>Documents</span> with <span>R</span> <span>Markdown</span></em>. <a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a>
+</div>
+<div id="ref-xie_r_2021" class="csl-entry">
+Xie, Y., Dervieux, C., &amp; Riederer, E. (2021). <em>R <span>Markdown</span> <span>Cookbook</span></em>. <a href="https://bookdown.org/yihui/rmarkdown-cookbook/">https://bookdown.org/yihui/rmarkdown-cookbook/</a>
 </div>
 </div>
             </section>

@@ -18,6 +18,14 @@ github-repo: lhbikos/extRas
 
 ![An image of the book cover. It includes four quadrants of non-normal distributions representing gender, race/ethnicty, sustainability/global concerns, and journal articles](images/ReCenterPsychStats-extRas-bookcover.png)
 
+This open education resource is available in three formats:
+
+* Formatted as an [html book](https://lhbikos.github.io/extRas/) via GitHub Pages
+* As a [PDF](https://github.com/lhbikos/extRas/blob/main/docs/ReC_extRas.pdf) available in the [docs](https://github.com/lhbikos/extRas/tree/main/docs) folder at the GitHub repository
+* As an [ebook](https://github.com/lhbikos/extRas/blob/main/docs/ReC_extRas.epub) available in the [docs](https://github.com/lhbikos/extRas/tree/main/docs) folder at the GitHub repository
+
+All materials used in creating this OER are available at its [GitHub repo](https://github.com/lhbikos/extRas).
+
 # PREFACE {-}
 
 **If you are viewing this document, you should know that this is a book-in-progress.  Early drafts are released for the purpose teaching my classes and gaining formative feedback from a host of stakeholders. The document was last updated on `r format (Sys.Date(), '%d %b %Y')`**.  Emerging volumes on other statistics are posted on the [ReCentering Psych Stats](https://lhbikos.github.io/BikosRVT/ReCenter.html) page at my research team's website. 

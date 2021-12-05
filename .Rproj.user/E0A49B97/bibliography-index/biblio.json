@@ -13670,6 +13670,36 @@
             "title": "Authoring Books and Technical Documents with R Markdown",
             "title-short": "5.4 RStudio IDE  bookdown",
             "type": "book"
+        },
+        {
+            "URL": "http://ontheline.trincoll.edu/",
+            "abstract": "This open-access digital book makes visible the hidden history of schooling and housing boundaries that divided metropolitan Hartford, Connecticut, and tells the stories of everyday families and civil rights activists who seek to cross over, redraw, or erase these lines.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2021,
+                        12,
+                        5
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Dougherty",
+                    "given": "Jack"
+                }
+            ],
+            "id": "dougherty_chapter_2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Chapter 9 Mapping and Publishing On The Line  On The Line: How Schooling, Housing, and Civil Rights Shaped Hartford and its Suburbs",
+            "title-short": "Chapter 9 Mapping and Publishing On The Line  On The Line",
+            "type": "book"
         }
     ],
     "project_biblios": [

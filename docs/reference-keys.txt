@@ -5,6 +5,7 @@ the-index.rmd-file-is-first
 build-the-book
 send-it-to-the-github
 publish-on-github-pages
+pdf-and-epub-compilations
 formatting-the-book
 the-yaml-matter-atop-the-index.rmd
 my-go-to-formatting-tools
@@ -14,3 +15,4 @@ text-emphasis
 adding-images
 creating-a-table-from-within-the-.rmd-file
 equations
+building-and-knitting

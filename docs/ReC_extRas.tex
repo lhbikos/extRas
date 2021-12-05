@@ -6,7 +6,7 @@
 ]{book}
 \title{ReCentering Psych Stats: extRas}
 \author{Lynette H. Bikos, PhD, ABPP}
-\date{04 Dec 2021}
+\date{05 Dec 2021}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -136,11 +136,25 @@
 \caption{An image of the book cover. It includes four quadrants of non-normal distributions representing gender, race/ethnicty, sustainability/global concerns, and journal articles}
 \end{figure}
 
+This open education resource is available in three formats:
+
+\begin{itemize}
+\tightlist
+\item
+  Formatted as an \href{https://lhbikos.github.io/extRas/}{html book} via GitHub Pages
+\item
+  As a \href{https://github.com/lhbikos/extRas/blob/main/docs/ReC_extRas.pdf}{PDF} available in the \href{https://github.com/lhbikos/extRas/tree/main/docs}{docs} folder at the GitHub repository
+\item
+  As an \href{https://github.com/lhbikos/extRas/blob/main/docs/ReC_extRas.epub}{ebook} available in the \href{https://github.com/lhbikos/extRas/tree/main/docs}{docs} folder at the GitHub repository
+\end{itemize}
+
+All materials used in creating this OER are available at its \href{https://github.com/lhbikos/extRas}{GitHub repo}.
+
 \hypertarget{preface}{%
 \chapter*{PREFACE}\label{preface}}
 \addcontentsline{toc}{chapter}{PREFACE}
 
-\textbf{If you are viewing this document, you should know that this is a book-in-progress. Early drafts are released for the purpose teaching my classes and gaining formative feedback from a host of stakeholders. The document was last updated on 04 Dec 2021}. Emerging volumes on other statistics are posted on the \href{https://lhbikos.github.io/BikosRVT/ReCenter.html}{ReCentering Psych Stats} page at my research team's website.
+\textbf{If you are viewing this document, you should know that this is a book-in-progress. Early drafts are released for the purpose teaching my classes and gaining formative feedback from a host of stakeholders. The document was last updated on 05 Dec 2021}. Emerging volumes on other statistics are posted on the \href{https://lhbikos.github.io/BikosRVT/ReCenter.html}{ReCentering Psych Stats} page at my research team's website.
 
 \href{https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c932455e-ef06-444a-bdca-acf7012d759a}{Screencasted Lecture Link}
 
@@ -205,9 +219,11 @@ Financial support for this project has been provided the following:
 
 \href{https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=7c20cc56-069a-40e2-abc7-adf3017f8c47}{Screencast Link}
 
-\emph{ReCentering Psych Stats} volumes are all created with a combination of R, R Studio, bookdown (the package), the GitHub, GitHub Desktop, GitHub Pages, and a host of packages. There is abundant information on all of these tools across the internet. In this lesson, I walk through the steps in creating the templated \href{https://bookdown.org/}{bookdown} ``book'' using Yihui Xie's package and process.
+\emph{ReCentering Psych Stats} volumes are all created with a combination of R, R Studio, bookdown (the package), the GitHub, GitHub Desktop, GitHub Pages, and a host of packages. There is abundant information on all of these tools across the internet. In this lesson, I walk through the steps in creating the templated \href{https://bookdown.org/}{bookdown} ``book'' using Yihui Xie's \emph{bookdown} package and processes. Two regularly updated sources \citep{xie_authoring_2021, xie_r_2021} provide a strong foundation to this process. Additionally, a quick internet search will yield additional resources for examples, unique circumstances, and idea generation. At the outset, please know that the instructions I provide is based on my experience with my projects and the work that we do in my research team. It is quite possible they will not be as applicable in other contexts.
 
-\emph{Note. If you are at an institution like mine and you have an enterprise-issued computer it may matter whether your R projects are on your local drive or a cloud-drive. At SPU it is possible to use R Studio with .rmd files and such on the local drive. But they will only knit if the projects are on the OneDrive directlry.}
+As I have continued in this journey of learning R, teaching R, and creating an open education resource, I have consulted and relied upon many resources beyond. Visiting the GitHub repository of two resources have been especially useful in gaining these skills. After struggling to comprehend some of the instructions in the \emph{bookdown} source materials I happened upon a chapter in Dougherty's, \href{https://ontheline.trincoll.edu/}{On The Line: How Schooling, Housing, and Civil Rights Shaped Hartford and its Suburbs}. I was first drawn to a closing chapter in this open-access digital book that described Dougherty's \citeyearpar{dougherty_chapter_2021} use of \emph{bookdwn}, the GitHub, and GitHub pages. When I realized that this project was entirely available on a \href{https://github.com/OnTheLine/otl-bookdown}{GitHub repo}, I learned that I could visit, inspect, and clone (i.e., make a copy of the GitHub repository) of this project. Soon after, I also learned that Navarro's \citep{navarro_book_2020} \href{https://learningstatisticswithr.com/}{Learning Statistics with R} was also available in a \href{https://github.com/djnavarro/rbook}{GitHub repo}. Together, the original R Markdown and bookdown training materials plus the two enacted examples were a tremendous resources of potential solutions I could try. For example, on one frustrating day, I could not get my book to build. I cloned Dougherty's OTL, opened his project on my laptop, and asked the project to build. When it did (flawlessly), I copied and adapted his code (I recall my struggles were in the YAML matter atop the index.rmd) until I could get my project to work. Until very recently, you could still see ``otl'' references in hashtagged out lines of code in some of the early volumes of ReCentering.
+
+\emph{Note. If you are at an institution like mine and you have an enterprise-issued computer it may matter whether your R projects are on your local drive or a cloud-drive. At SPU it is possible to use R Studio with .rmd files and such on the local drive. But they will only knit if the projects are on the OneDrive directory.}
 
 \hypertarget{creating-a-bookdown-template}{%
 \section{\texorpdfstring{Creating a \emph{bookdown} template}{Creating a bookdown template}}\label{creating-a-bookdown-template}}
@@ -338,7 +354,43 @@ Still in settings, select ``Pages'' (menu bar on left).
 
 After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: \url{https:/YOURACCOUNT.github.io/YOURPROJECT/}
 
-\href{link}{Screencast Link}
+\hypertarget{pdf-and-epub-compilations}{%
+\section{PDF and epub Compilations}\label{pdf-and-epub-compilations}}
+
+It has taken me quite some time to figure out compilation as a PDF. There seem to be a couple of elements that make it successful. First, it is essential to have the tinytex package installed. Use this two-part code:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#install.packages(\textquotesingle{}tinytex\textquotesingle{})}
+\CommentTok{\#tinytex::install\_tinytex()}
+\end{Highlighting}
+\end{Shaded}
+
+Second, inspect the ``\_output.yml'' content.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bookdown}\SpecialCharTok{::}\NormalTok{gitbook}\SpecialCharTok{:}
+\NormalTok{  css}\SpecialCharTok{:}\NormalTok{ style.css}
+\NormalTok{  config}\SpecialCharTok{:}
+\NormalTok{    toc}\SpecialCharTok{:}
+\NormalTok{      before}\SpecialCharTok{:} \ErrorTok{|}
+        \ErrorTok{\textless{}}\NormalTok{li}\SpecialCharTok{\textgreater{}}\ErrorTok{\textless{}}\NormalTok{a href}\OtherTok{=}\StringTok{"./"}\SpecialCharTok{\textgreater{}}\NormalTok{ReCentering Psych Stats extRas}\SpecialCharTok{\textless{}}\ErrorTok{/}\NormalTok{a}\SpecialCharTok{\textgreater{}}\ErrorTok{\textless{}/}\NormalTok{li}\SpecialCharTok{\textgreater{}}
+\NormalTok{      after}\SpecialCharTok{:} \ErrorTok{|}
+        \ErrorTok{\textless{}}\NormalTok{li}\SpecialCharTok{\textgreater{}}\ErrorTok{\textless{}}\NormalTok{a href}\OtherTok{=}\StringTok{"https://github.com/rstudio/bookdown"}\NormalTok{ target}\OtherTok{=}\StringTok{"blank"}\SpecialCharTok{\textgreater{}}\NormalTok{Published with bookdown}\SpecialCharTok{\textless{}}\ErrorTok{/}\NormalTok{a}\SpecialCharTok{\textgreater{}}\ErrorTok{\textless{}/}\NormalTok{li}\SpecialCharTok{\textgreater{}}
+\NormalTok{    edit}\SpecialCharTok{:}\NormalTok{ https}\SpecialCharTok{:}\ErrorTok{//}\NormalTok{github.com}\SpecialCharTok{/}\NormalTok{USERNAME}\SpecialCharTok{/}\NormalTok{REPO}\SpecialCharTok{/}\NormalTok{edit}\SpecialCharTok{/}\NormalTok{BRANCH}\SpecialCharTok{/}\NormalTok{\%s}
+\NormalTok{    download}\SpecialCharTok{:}\NormalTok{ [}\StringTok{"pdf"}\NormalTok{, }\StringTok{"epub"}\NormalTok{]}
+\NormalTok{bookdown}\SpecialCharTok{::}\NormalTok{pdf\_book}\SpecialCharTok{:}
+\NormalTok{  includes}\SpecialCharTok{:}
+\NormalTok{    in\_header}\SpecialCharTok{:}\NormalTok{ preamble.tex}
+\NormalTok{  latex\_engine}\SpecialCharTok{:}\NormalTok{ xelatex}
+\NormalTok{  citation\_package}\SpecialCharTok{:}\NormalTok{ natbib}
+\NormalTok{  keep\_tex}\SpecialCharTok{:}\NormalTok{ yes}
+\NormalTok{bookdown}\SpecialCharTok{::}\NormalTok{epub\_book}\SpecialCharTok{:}\NormalTok{ default}
+\end{Highlighting}
+\end{Shaded}
+
+As you can see, the default instructions from the \emph{bookdown} template include both pdf and epub formats. You can retrieve them from the docs folder.
 
 \hypertarget{formatting-the-book}{%
 \chapter{Formatting the Book}\label{formatting-the-book}}
@@ -350,9 +402,9 @@ Let's start by exploring the \emph{index.Rmd}
 \hypertarget{the-yaml-matter-atop-the-index.rmd}{%
 \section{\texorpdfstring{The YAML matter atop the \emph{index.Rmd}}{The YAML matter atop the index.Rmd}}\label{the-yaml-matter-atop-the-index.rmd}}
 
-The matterial at the top of the \emph{index.Rmd} is often called ``yaml matter'' (``Yet Another Markup Language'') and provides instructions for how the document is to be rendered. These instructions appear between three dashed lines before and after the YAML header.
+The material at the top of the \emph{index.Rmd} is often called ``yaml matter'' (``Yet Another Markup Language'') and provides instructions for how the document is to be rendered. These instructions appear between three dashed lines before and after the YAML header.
 
-In decoding what is and is not necessary in my YAML header (and learning what each command does), I have often visited other open source documents such as Learning Statistics with R \citeyearpar{navarro_book_2020} which is \href{https://github.com/djnavarro/rbook}{available} on the GitHub. The text below is what is in the YAML of this index.
+In decoding what is and is not necessary in my YAML header (and learning what each command does), I have often visited other open source documents such as Dougherty's \citeyearpar{dougherty_chapter_2021} \href{https://github.com/OnTheLine/otl-bookdown}{On the Line} and Navarro's \citeyearpar{navarro_book_2020} \href{https://github.com/djnavarro/rbook}{Learning Statistics with R} which are both available GitHub (the links are to their GitHub repos). The text below is what is in the YAML of this index.
 
 The sections of highlighted text below are copied directly from the YAML header in this mini-volume. Most of it will seem self-explanatory. However, I offer brief explanations following sections of the script. If you access the .rmd file itself, I left left some of these clues using by commenting them out with hashtags.
 
@@ -364,7 +416,7 @@ The sections of highlighted text below are copied directly from the YAML header 
 \end{Highlighting}
 \end{Shaded}
 
-Title and date are likely obvious. When the date, entered following ``r'' (using the format: `\texttt{r} `) the date at the time of the knit or build will auto-update, like this: 04 Dec 2021. As might be obvious from the ``format'' and ``\%d \%b \%Y'' code, the date can be presented in a variety of structures. More instructions are available in the R Markdown Cookbook \citep{xie_r_2021}.
+Title and date are likely obvious. When the date, entered following ``r'' (using the format: `\texttt{r} `) the date at the time of the knit or build will auto-update, like this: 05 Dec 2021. As might be obvious from the ``format'' and ``\%d \%b \%Y'' code, the date can be presented in a variety of structures. More instructions are available in the R Markdown Cookbook \citep{xie_r_2021}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -373,7 +425,7 @@ Title and date are likely obvious. When the date, entered following ``r'' (using
 \end{Highlighting}
 \end{Shaded}
 
-The site and document class commands (and their settings) are the defaults in the bookdown template. They allow RStudio to recognize the directory as a book source directory and it will add the ``Build Book'' button in the ``Build'' pane \citep{xie_54_nodate}.
+The site and document class commands (and their settings) are the defaults in the bookdown template. They allow RStudio to recognize the directory as a book source directory and it will add the ``Build Book'' button in the ``Build'' pane \citep{xie_r_2021}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -408,7 +460,7 @@ If you include the description, make sure to keep the pipe (\textbar) that occur
 \hypertarget{my-go-to-formatting-tools}{%
 \section{My Go-To Formatting Tools}\label{my-go-to-formatting-tools}}
 
-R Markdown and bookdown offer a number of options for formatting text. My purpose is to merely provide an introduction to the techniques that I have used most frequently in ReCentering Psych Stats. Not surprisingly, there are tremendous resources on the internet that provide instruction and examples. A helpful second stop beyond my resource is Chapter 5 (Formatting) of the R Markdown Cookbook \citep{xie_r_2021} and Authoring Books with R Markdown \citep{xie_54_nodate}.
+R Markdown and bookdown offer a number of options for formatting text. My purpose is to merely provide an introduction to the techniques that I have used most frequently in ReCentering Psych Stats. Not surprisingly, there are tremendous resources on the internet that provide instruction and examples. A helpful second stop beyond my resource is Chapter 5 (Formatting) of the R Markdown Cookbook \citep{xie_r_2021} and Authoring Books with R Markdown \citep{xie_r_2021}.
 
 \hypertarget{chapter-numbering}{%
 \subsection{Chapter numbering}\label{chapter-numbering}}
@@ -510,7 +562,7 @@ The rendered result is this. If I am going to make a numbered list I will start 
 \hypertarget{text-emphasis}{%
 \subsection{Text emphasis}\label{text-emphasis}}
 
-Emphasizing text can be hepful in conveying the meaning in the finished document. My understanding is that we should use the built-in systems (in the case of bookdown, using the \# system for headings/subheadings) for the heading structure. This is so that text-readers will recognize and emphasize appropriately. I have also understood that underlining is discouraged because it may give the impression that there is a hyperlink. Therefore my go-to's are \emph{italics} and \textbf{bold}.
+Emphasizing text can be helpful in conveying the meaning in the finished document. My understanding is that we should use the built-in systems (in the case of bookdown, using the \# system for headings/subheadings) for the heading structure. This is so that text-readers will recognize and emphasize appropriately. I have also understood that underlining is discouraged because it may give the impression that there is a hyperlink. Therefore my go-to's are \emph{italics} and \textbf{bold}.
 
 \emph{Italics} is created by placing a single asterisk around the intended sired word or phrase; \textbf{bold} is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.
 
@@ -521,6 +573,16 @@ Emphasizing text can be hepful in conveying the meaning in the finished document
 \end{Shaded}
 
 By now you may have noticed that the asterisk can be uses for bulleted lists, italics, and bold. Yes, there will be times when R will read the asterisks in a confusing way and you will need to think careful about the coding and how to order it.
+
+There are times when I want emphasize something in the text with \texttt{highlights} rather than with \emph{italics} or \textbf{bold}. This is possible by surrounding the words with tic (```'') marks. This sentence is repeated below to demonstrate the different techniques.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{There are times when I want emphasize something }\ControlFlowTok{in}\NormalTok{ the text with }\StringTok{\textasciigrave{}}\AttributeTok{highlights}\StringTok{\textasciigrave{}}\NormalTok{ rather than with }\SpecialCharTok{*}\NormalTok{italics}\SpecialCharTok{*}\NormalTok{ (surrounding the tet }\ControlFlowTok{in}\NormalTok{ single asterisks) or }\SpecialCharTok{**}\NormalTok{bold}\SpecialCharTok{**}\NormalTok{ (surrounding the text }\ControlFlowTok{in}\NormalTok{ double asterisks.}
+\end{Highlighting}
+\end{Shaded}
+
+If I want to highlight an entire section, I enter a code chunk and then in the chunk header write ``r eval=FALSE''. The command, ``eval=FALSE'' means that R will simply print what is in the chunk, but not try to execute it. This results in the boxes of highlights that you see. Unfortunately, I have not figured out a way to show this in a highlighted box. Note that text does not wrap automatically in these chunks, this is why a slider appears on the bottom of some of these chunks. Returns (ENTER) can help with spacing if you prefer.
 
 \hypertarget{adding-images}{%
 \subsection{Adding images}\label{adding-images}}
@@ -658,6 +720,10 @@ A LaTeX equation is imbedded in the \emph{F} string to properly format the eta-s
 \end{Highlighting}
 \end{Shaded}
 
+\hypertarget{building-and-knitting}{%
+\subsection{Building and Knitting}\label{building-and-knitting}}
+
+The build process was described in the From \emph{bookdown} to GitHub Pages\{\#book1\} chapter. Especially when the projects are statistically oriented, building a book can take some time. If you would like a quick check of a particular .rmd file consider a quick \emph{Knit}. This is an easy way to check your work and make corrections.
 
   \bibliography{STATSnMETH.bib}
 
