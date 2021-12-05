@@ -354,6 +354,41 @@ Still in settings, select ``Pages'' (menu bar on left).
 
 After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: \url{https:/YOURACCOUNT.github.io/YOURPROJECT/}
 
+\hypertarget{updating-via-github-desktop}{%
+\section{Updating via GitHub Desktop}\label{updating-via-github-desktop}}
+
+\emph{Perpetually in progress} texts are continuously updated. When you have updates
+
+\begin{itemize}
+\tightlist
+\item
+  Open GitHub Desktop
+\item
+  Navigate to the repository
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Use the dropdown menu under Current respository (upper left of app)
+  \end{itemize}
+\item
+  If there are changes in the left panel then an update is appropriate; if there are none, nothing will update.
+\item
+  Brief text is required in the ``Summary'' box (lower left)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    It is optional to provide a description. I often leave cryptic summaries and no description. If, however, there was something significant/meaningful, I would elaborate more.
+  \end{itemize}
+\item
+  Click ``Commit to main''
+\item
+  Click ``Push origin'' found either in the center of the menu bar or in the middle of the page.
+\end{itemize}
+
+That's it! Depending on the size of the project/changes, all of the documents in the GitHub Repo and the GitHub Pages repo book will be updated. From time-to-time you may wish to cull the GitHub repo to remove older documents that may have been created but replaced (because of renaming or something) and are no longer in use.
+
 \hypertarget{pdf-and-epub-compilations}{%
 \section{PDF and epub Compilations}\label{pdf-and-epub-compilations}}
 
@@ -395,7 +430,11 @@ As you can see, the default instructions from the \emph{bookdown} template inclu
 \hypertarget{formatting-the-book}{%
 \chapter{Formatting the Book}\label{formatting-the-book}}
 
-In this lesson I review the formatting tools and conventions that I use most often. The \emph{bookdown} project has a very specific file structure. The \emph{index.Rmd} file must be first and must have that exact name (i.e., ``index.Rmd''). The files that follow should be numbered in the order in which you want them to appear. While you may wish to give each chapter its unique number, the \emph{bookdown} packages numbers the chapters by the single hashtag -- skipping over any that have the dash (enclosed in squiggly parentheses). That is, the numbers associated with each of the .Rmd files may not correspond with chapter numbers unless you have carefully hashtagged out some of the single hashtags.
+\href{https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=430263b6-f1bd-4a8c-a393-adf501447448}{Screencast Link}
+
+In this lesson I review the formatting tools and conventions that I use most often. This is not an exhaustive list of formatting tools, just the ones that have been useful in the \emph{ReCentering Psych Stats} project. If you haven't found them already, do check out the two regularly updated official documentation for using R Markdown with \emph{bookdown} \citep{xie_authoring_2021, xie_r_2021}.
+
+The \emph{bookdown} project has a very specific file structure. The \emph{index.Rmd} file must be first and must have that exact name (i.e., ``index.Rmd''). The files that follow should be numbered in the order in which you want them to appear. While you may wish to give each chapter its unique number, the \emph{bookdown} packages numbers the chapters by the single hashtag -- skipping over any that have the dash (enclosed in squiggly parentheses). That is, the numbers associated with each of the .Rmd files may not correspond with chapter numbers unless you have carefully hashtagged out some of the single hashtags.
 
 Let's start by exploring the \emph{index.Rmd}
 
@@ -501,7 +540,7 @@ Bulleted lists can be specified with the '*' , `-'```, or'+' signs, interchangea
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{If I am going to make a bulleted list I will start by leaving a space between the text and the first item }\ControlFlowTok{in}\NormalTok{ the list}\SpecialCharTok{:}
-  
+
 \ErrorTok{*}\NormalTok{ Parent item }\DecValTok{1}
 \SpecialCharTok{*}\NormalTok{ Parent item }\DecValTok{2}
   \SpecialCharTok{{-}}\NormalTok{ Child item }\DecValTok{1}
@@ -564,7 +603,7 @@ The rendered result is this. If I am going to make a numbered list I will start 
 
 Emphasizing text can be helpful in conveying the meaning in the finished document. My understanding is that we should use the built-in systems (in the case of bookdown, using the \# system for headings/subheadings) for the heading structure. This is so that text-readers will recognize and emphasize appropriately. I have also understood that underlining is discouraged because it may give the impression that there is a hyperlink. Therefore my go-to's are \emph{italics} and \textbf{bold}.
 
-\emph{Italics} is created by placing a single asterisk around the intended sired word or phrase; \textbf{bold} is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.
+\emph{Italics} is created by placing a single asterisk around the intended word or phrase; \textbf{bold} is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.
 
 \begin{Shaded}
 \begin{Highlighting}[]

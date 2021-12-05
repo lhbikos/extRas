@@ -3,7 +3,7 @@
     "path": "C:/Users/lhbikos/OneDrive - Seattle Pacific University/ReCenterPsychStats/extRas/02-bookdown2.Rmd",
     "project_path": "02-bookdown2.Rmd",
     "type": "r_markdown",
-    "hash": "1620288237",
+    "hash": "1353054514",
     "contents": "",
     "dirty": false,
     "created": 1638664217467.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "57,401",
-        "scrollLine": "46"
+        "cursorPosition": "246,0",
+        "scrollLine": "223"
     },
     "folds": "",
-    "lastKnownWriteTime": 1638725310,
+    "lastKnownWriteTime": 1638735846,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1638725310291,
+    "last_content_update": 1638735846868,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -5,6 +5,7 @@ the-index.rmd-file-is-first
 build-the-book
 send-it-to-the-github
 publish-on-github-pages
+updating-via-github-desktop
 pdf-and-epub-compilations
 formatting-the-book
 the-yaml-matter-atop-the-index.rmd

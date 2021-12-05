@@ -1,6 +1,10 @@
 # Formatting the Book
 
-In this lesson I review the formatting tools and conventions that I use most often.  The *bookdown* project has a very specific file structure. The *index.Rmd* file must be first and must have that exact name (i.e., "index.Rmd"). The files that follow should be numbered in the order in which you want them to appear. While you may wish to give each chapter its unique number, the *bookdown* packages numbers the chapters by the single hashtag -- skipping over any that have the dash (enclosed in squiggly parentheses). That is, the numbers associated with each of the .Rmd files may not correspond with chapter numbers unless you have carefully hashtagged out some of the single hashtags.
+[Screencast Link](https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=430263b6-f1bd-4a8c-a393-adf501447448)
+
+In this lesson I review the formatting tools and conventions that I use most often. This is not an exhaustive list of formatting tools, just the ones that have been useful in the *ReCentering Psych Stats* project. If you haven't found them already, do check out the two regularly updated official documentation for using R Markdown with *bookdown* [@xie_authoring_2021; @xie_r_2021].  
+
+The *bookdown* project has a very specific file structure. The *index.Rmd* file must be first and must have that exact name (i.e., "index.Rmd"). The files that follow should be numbered in the order in which you want them to appear. While you may wish to give each chapter its unique number, the *bookdown* packages numbers the chapters by the single hashtag -- skipping over any that have the dash (enclosed in squiggly parentheses). That is, the numbers associated with each of the .Rmd files may not correspond with chapter numbers unless you have carefully hashtagged out some of the single hashtags.
 
 Let's start by exploring the *index.Rmd*
 
@@ -91,7 +95,7 @@ Bulleted lists can be specified with the '*' , '-'"', or '+' signs, interchangea
 
 ```{r eval=FALSE}
 If I am going to make a bulleted list I will start by leaving a space between the text and the first item in the list:
-  
+
 * Parent item 1
 * Parent item 2
   - Child item 1
@@ -99,7 +103,7 @@ If I am going to make a bulleted list I will start by leaving a space between th
 ```
 
 The rendered result is this.  If I am going to make a bulleted list I will start by leaving a space between the text and the first item in the list:
-  
+
 * Parent item 1
 * Parent item 2
   - Child item 1
@@ -129,7 +133,7 @@ The rendered result is this.  If I am going to make a numbered list I will start
 Emphasizing text can be helpful in conveying the meaning in the finished document. My understanding is that we should use the built-in systems (in the case of bookdown, using the # system for headings/subheadings) for the heading structure. This is so that text-readers will recognize and emphasize appropriately. I have also understood that underlining is discouraged because it may give the impression that there is a hyperlink. Therefore my go-to's are *italics* and **bold**.  
 
 
-*Italics* is created by placing a single asterisk around the intended sired word or phrase; **bold** is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.
+*Italics* is created by placing a single asterisk around the intended word or phrase; **bold** is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.
 
 ```{r eval=FALSE}
 *Italics* is created by placing a single asterisk around the intended sired word or phrase; **bold** is created with a double asterisk around the word or phrase to be bolded.
@@ -157,13 +161,6 @@ Before uploading the imagine, I created a single image (from the four photos) an
 ```
 
 ![A four-photo series of thumbnails depicting three individuals sitting around a table trying to solve a statistics dilemma. The facial expressions become increasingly bewildered across the series.](images/formatting/StatsConsult.png)
-
-
-
-
-
-
-
 
 ### Creating a Table from within the .rmd file
 
@@ -195,7 +192,7 @@ The pretty table:
 |               |Reality                       |
 |---------------|:----------------------------:|
 
-| Your Findings |Ho True       |Ho False       |
+|Your Findings  |Ho True       |Ho False       |
 |:--------------|:------------:|:-------------:|
 |Ho True        |Correct       |Type II error  |
 |Ho False       |Type I error  |Correct        |

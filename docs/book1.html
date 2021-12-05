@@ -174,7 +174,8 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="book1.html"><a href="book1.html#build-the-book"><i class="fa fa-check"></i><b>1.4</b> Build the Book!</a></li>
 <li class="chapter" data-level="1.5" data-path="book1.html"><a href="book1.html#send-it-to-the-github"><i class="fa fa-check"></i><b>1.5</b> Send it to the GitHub</a></li>
 <li class="chapter" data-level="1.6" data-path="book1.html"><a href="book1.html#publish-on-github-pages"><i class="fa fa-check"></i><b>1.6</b> Publish on GitHub Pages</a></li>
-<li class="chapter" data-level="1.7" data-path="book1.html"><a href="book1.html#pdf-and-epub-compilations"><i class="fa fa-check"></i><b>1.7</b> PDF and epub Compilations</a></li>
+<li class="chapter" data-level="1.7" data-path="book1.html"><a href="book1.html#updating-via-github-desktop"><i class="fa fa-check"></i><b>1.7</b> Updating via GitHub Desktop</a></li>
+<li class="chapter" data-level="1.8" data-path="book1.html"><a href="book1.html#pdf-and-epub-compilations"><i class="fa fa-check"></i><b>1.8</b> PDF and epub Compilations</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="formatting-the-book.html"><a href="formatting-the-book.html"><i class="fa fa-check"></i><b>2</b> Formatting the Book</a>
 <ul>
@@ -289,8 +290,27 @@ output_dir: “docs”</p>
 </ul>
 <p>After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: <a href="https:/YOURACCOUNT.github.io/YOURPROJECT/" class="uri">https:/YOURACCOUNT.github.io/YOURPROJECT/</a></p>
 </div>
-<div id="pdf-and-epub-compilations" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> PDF and epub Compilations</h2>
+<div id="updating-via-github-desktop" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> Updating via GitHub Desktop</h2>
+<p><em>Perpetually in progress</em> texts are continuously updated. When you have updates</p>
+<ul>
+<li>Open GitHub Desktop</li>
+<li>Navigate to the repository
+<ul>
+<li>Use the dropdown menu under Current respository (upper left of app)</li>
+</ul></li>
+<li>If there are changes in the left panel then an update is appropriate; if there are none, nothing will update.</li>
+<li>Brief text is required in the “Summary” box (lower left)
+<ul>
+<li>It is optional to provide a description. I often leave cryptic summaries and no description. If, however, there was something significant/meaningful, I would elaborate more.</li>
+</ul></li>
+<li>Click “Commit to main”</li>
+<li>Click “Push origin” found either in the center of the menu bar or in the middle of the page.</li>
+</ul>
+<p>That’s it! Depending on the size of the project/changes, all of the documents in the GitHub Repo and the GitHub Pages repo book will be updated. From time-to-time you may wish to cull the GitHub repo to remove older documents that may have been created but replaced (because of renaming or something) and are no longer in use.</p>
+</div>
+<div id="pdf-and-epub-compilations" class="section level2" number="1.8">
+<h2><span class="header-section-number">1.8</span> PDF and epub Compilations</h2>
 <p>It has taken me quite some time to figure out compilation as a PDF. There seem to be a couple of elements that make it successful. First, it is essential to have the tinytex package installed. Use this two-part code:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="book1.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&#39;tinytex&#39;)</span></span>
 <span id="cb2-2"><a href="book1.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#tinytex::install_tinytex()</span></span></code></pre></div>

@@ -174,7 +174,8 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="book1.html"><a href="book1.html#build-the-book"><i class="fa fa-check"></i><b>1.4</b> Build the Book!</a></li>
 <li class="chapter" data-level="1.5" data-path="book1.html"><a href="book1.html#send-it-to-the-github"><i class="fa fa-check"></i><b>1.5</b> Send it to the GitHub</a></li>
 <li class="chapter" data-level="1.6" data-path="book1.html"><a href="book1.html#publish-on-github-pages"><i class="fa fa-check"></i><b>1.6</b> Publish on GitHub Pages</a></li>
-<li class="chapter" data-level="1.7" data-path="book1.html"><a href="book1.html#pdf-and-epub-compilations"><i class="fa fa-check"></i><b>1.7</b> PDF and epub Compilations</a></li>
+<li class="chapter" data-level="1.7" data-path="book1.html"><a href="book1.html#updating-via-github-desktop"><i class="fa fa-check"></i><b>1.7</b> Updating via GitHub Desktop</a></li>
+<li class="chapter" data-level="1.8" data-path="book1.html"><a href="book1.html#pdf-and-epub-compilations"><i class="fa fa-check"></i><b>1.8</b> PDF and epub Compilations</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="formatting-the-book.html"><a href="formatting-the-book.html"><i class="fa fa-check"></i><b>2</b> Formatting the Book</a>
 <ul>
@@ -212,7 +213,9 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="formatting-the-book" class="section level1" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Formatting the Book</h1>
-<p>In this lesson I review the formatting tools and conventions that I use most often. The <em>bookdown</em> project has a very specific file structure. The <em>index.Rmd</em> file must be first and must have that exact name (i.e., “index.Rmd”). The files that follow should be numbered in the order in which you want them to appear. While you may wish to give each chapter its unique number, the <em>bookdown</em> packages numbers the chapters by the single hashtag – skipping over any that have the dash (enclosed in squiggly parentheses). That is, the numbers associated with each of the .Rmd files may not correspond with chapter numbers unless you have carefully hashtagged out some of the single hashtags.</p>
+<p><a href="https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=430263b6-f1bd-4a8c-a393-adf501447448">Screencast Link</a></p>
+<p>In this lesson I review the formatting tools and conventions that I use most often. This is not an exhaustive list of formatting tools, just the ones that have been useful in the <em>ReCentering Psych Stats</em> project. If you haven’t found them already, do check out the two regularly updated official documentation for using R Markdown with <em>bookdown</em> <span class="citation">(<a href="#ref-xie_authoring_2021" role="doc-biblioref">Xie, 2021</a>; <a href="#ref-xie_r_2021" role="doc-biblioref">Xie et al., 2021</a>)</span>.</p>
+<p>The <em>bookdown</em> project has a very specific file structure. The <em>index.Rmd</em> file must be first and must have that exact name (i.e., “index.Rmd”). The files that follow should be numbered in the order in which you want them to appear. While you may wish to give each chapter its unique number, the <em>bookdown</em> packages numbers the chapters by the single hashtag – skipping over any that have the dash (enclosed in squiggly parentheses). That is, the numbers associated with each of the .Rmd files may not correspond with chapter numbers unless you have carefully hashtagged out some of the single hashtags.</p>
 <p>Let’s start by exploring the <em>index.Rmd</em></p>
 <div id="the-yaml-matter-atop-the-index.rmd" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> The YAML matter atop the <em>index.Rmd</em></h2>
@@ -264,7 +267,7 @@ div.csl-indent {
 <p>My understanding that when books are written for use on the internet short(er) paragraphs and lists can be helpful to the reader in that they reduce the cognitive load.</p>
 <p>Bulleted lists can be specified with the ’*’ , ‘-’“‘, or’+’ signs, interchangeably. For no specific reason, I often use the asterisk for parent-level headings and a dash for child-level headings. A line space is required between the text above the first bullet.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="formatting-the-book.html#cb10-1" aria-hidden="true" tabindex="-1"></a>If I am going to make a bulleted list I will start by leaving a space between the text and the first item <span class="cf">in</span> the list<span class="sc">:</span></span>
-<span id="cb10-2"><a href="formatting-the-book.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-2"><a href="formatting-the-book.html#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="formatting-the-book.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="er">*</span> Parent item <span class="dv">1</span></span>
 <span id="cb10-4"><a href="formatting-the-book.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span> Parent item <span class="dv">2</span></span>
 <span id="cb10-5"><a href="formatting-the-book.html#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">-</span> Child item <span class="dv">1</span></span>
@@ -298,7 +301,7 @@ div.csl-indent {
 <div id="text-emphasis" class="section level3" number="2.2.3">
 <h3><span class="header-section-number">2.2.3</span> Text emphasis</h3>
 <p>Emphasizing text can be helpful in conveying the meaning in the finished document. My understanding is that we should use the built-in systems (in the case of bookdown, using the # system for headings/subheadings) for the heading structure. This is so that text-readers will recognize and emphasize appropriately. I have also understood that underlining is discouraged because it may give the impression that there is a hyperlink. Therefore my go-to’s are <em>italics</em> and <strong>bold</strong>.</p>
-<p><em>Italics</em> is created by placing a single asterisk around the intended sired word or phrase; <strong>bold</strong> is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.</p>
+<p><em>Italics</em> is created by placing a single asterisk around the intended word or phrase; <strong>bold</strong> is created with a double asterisk around the word or phrase to be bolded. This sentence is demonstrated, below.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="formatting-the-book.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">*</span>Italics<span class="sc">*</span> is created by placing a single asterisk around the intended sired word or phrase; <span class="sc">**</span>bold<span class="sc">**</span> is created with a double asterisk around the word or phrase to be bolded.</span></code></pre></div>
 <p>By now you may have noticed that the asterisk can be uses for bulleted lists, italics, and bold. Yes, there will be times when R will read the asterisks in a confusing way and you will need to think careful about the coding and how to order it.</p>
 <p>There are times when I want emphasize something in the text with <code>highlights</code> rather than with <em>italics</em> or <strong>bold</strong>. This is possible by surrounding the words with tic (“`”) marks. This sentence is repeated below to demonstrate the different techniques.</p>
@@ -462,6 +465,9 @@ Dougherty, J. (2021). <em>Chapter 9 <span>Mapping</span> and <span>Publishing</s
 </div>
 <div id="ref-navarro_book_2020" class="csl-entry">
 Navarro, D. (2020). <em>Book: <span>Learning</span> <span>Statistics</span> with <span>R</span> - <span>A</span> tutorial for <span>Psychology</span> <span>Students</span> and other <span>Beginners</span></em>. Open Education Resource (OER) LibreTexts Project. <a href="https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)">https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)</a>
+</div>
+<div id="ref-xie_authoring_2021" class="csl-entry">
+Xie, Y. (2021). <em>Authoring <span>Books</span> and <span>Technical</span> <span>Documents</span> with <span>R</span> <span>Markdown</span></em>. <a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a>
 </div>
 <div id="ref-xie_r_2021" class="csl-entry">
 Xie, Y., Dervieux, C., &amp; Riederer, E. (2021). <em>R <span>Markdown</span> <span>Cookbook</span></em>. <a href="https://bookdown.org/yihui/rmarkdown-cookbook/">https://bookdown.org/yihui/rmarkdown-cookbook/</a>
