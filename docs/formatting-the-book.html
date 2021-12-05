@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="book1.html"/>
-
+<link rel="next" href="references-1.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -186,11 +186,14 @@ div.csl-indent {
 <li class="chapter" data-level="2.2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#bulleted-and-numbered-lists"><i class="fa fa-check"></i><b>2.2.2</b> Bulleted and numbered lists</a></li>
 <li class="chapter" data-level="2.2.3" data-path="formatting-the-book.html"><a href="formatting-the-book.html#text-emphasis"><i class="fa fa-check"></i><b>2.2.3</b> Text emphasis</a></li>
 <li class="chapter" data-level="2.2.4" data-path="formatting-the-book.html"><a href="formatting-the-book.html#adding-images"><i class="fa fa-check"></i><b>2.2.4</b> Adding images</a></li>
-<li class="chapter" data-level="2.2.5" data-path="formatting-the-book.html"><a href="formatting-the-book.html#creating-a-table-from-within-the-.rmd-file"><i class="fa fa-check"></i><b>2.2.5</b> Creating a Table from within the .rmd file</a></li>
+<li class="chapter" data-level="2.2.5" data-path="formatting-the-book.html"><a href="formatting-the-book.html#creating-a-table-from-within-the-.rmd-file"><i class="fa fa-check"></i><b>2.2.5</b> Creating a table from within the .rmd file</a></li>
 <li class="chapter" data-level="2.2.6" data-path="formatting-the-book.html"><a href="formatting-the-book.html#equations"><i class="fa fa-check"></i><b>2.2.6</b> Equations</a></li>
-<li class="chapter" data-level="2.2.7" data-path="formatting-the-book.html"><a href="formatting-the-book.html#building-and-knitting"><i class="fa fa-check"></i><b>2.2.7</b> Building and Knitting</a></li>
+<li class="chapter" data-level="2.2.7" data-path="formatting-the-book.html"><a href="formatting-the-book.html#building-and-knitting"><i class="fa fa-check"></i><b>2.2.7</b> Building and knitting</a></li>
+<li class="chapter" data-level="2.2.8" data-path="formatting-the-book.html"><a href="formatting-the-book.html#references"><i class="fa fa-check"></i><b>2.2.8</b> References</a></li>
+<li class="chapter" data-level="2.2.9" data-path="formatting-the-book.html"><a href="formatting-the-book.html#how-did-you-do-that"><i class="fa fa-check"></i><b>2.2.9</b> How did you do that?</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>REFERENCES</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -319,7 +322,7 @@ div.csl-indent {
 </div>
 </div>
 <div id="creating-a-table-from-within-the-.rmd-file" class="section level3" number="2.2.5">
-<h3><span class="header-section-number">2.2.5</span> Creating a Table from within the .rmd file</h3>
+<h3><span class="header-section-number">2.2.5</span> Creating a table from within the .rmd file</h3>
 <p>Often times we will use packages to create, present, and imbed tables and figures as we conduct the statistical analysis. At other times, we may wish to create a table without an external dataset. I do this in nearly every ReCentering Psych Stats chapter when I create the grading rubric. At other times, I may create a table to facilitate comprehension of a statistical concept. Here is a the classic table used to convey the relationship between Type I and Type II error.</p>
 <p>Here’s the code for producing the table (actually two distinct tables) that follows. The specification is simultaneously simple and complex. Several guidelines will help decode it.</p>
 <ol style="list-style-type: decimal">
@@ -423,42 +426,37 @@ div.csl-indent {
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="formatting-the-book.html#cb18-1" aria-hidden="true" tabindex="-1"></a>The result is an equation that appears, centered, on its own row <span class="cf">in</span> the text. When the LaTeX equation is wrapped <span class="cf">in</span> single dollar signs it will appear <span class="cf">in</span> the row. This is often the case when we present statistical output. Consider this example of the results of an <span class="sc">*</span>F<span class="sc">*</span> statistic.  Results indicated a significant effect of the IV on the<span class="sc">:</span>  DV <span class="sc">*</span>F<span class="sc">*</span> (<span class="dv">2</span>, <span class="dv">87</span>) <span class="ot">=</span> <span class="fl">13.566</span>, <span class="sc">*</span>p<span class="sc">*</span> <span class="er">&lt;</span> .<span class="dv">001</span>, <span class="sc">$</span>\eta<span class="sc">^</span><span class="dv">2</span><span class="sc">$</span> <span class="er">=</span> <span class="dv">0</span>.<span class="fl">238.</span> </span></code></pre></div>
 </div>
 <div id="building-and-knitting" class="section level3" number="2.2.7">
-<h3><span class="header-section-number">2.2.7</span> Building and Knitting</h3>
+<h3><span class="header-section-number">2.2.7</span> Building and knitting</h3>
 <p>The build process was described in the From <em>bookdown</em> to GitHub Pages{#book1} chapter. Especially when the projects are statistically oriented, building a book can take some time. If you would like a quick check of a particular .rmd file consider a quick <em>Knit</em>. This is an easy way to check your work and make corrections.</p>
-
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div class="csl-entry">
-Byrne, B. M. (2016). Structural <span>Equation</span> <span>Modeling</span>: <span>The</span> basics (<span>Chapter</span> 1). In <em>Structural <span>Equation</span> <span>Modeling</span> with <span>AMOS</span>: <span>Basic</span> <span>Concepts</span>, <span>Applications</span>, and <span>Programming</span>, <span>Third</span> <span>Edition</span></em>. Taylor &amp; Francis Group. <a href="http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523">http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523</a>
 </div>
-<div class="csl-entry">
-Dougherty, J. (2021). <em>Chapter 9 <span>Mapping</span> and <span>Publishing</span> <span>On</span> <span>The</span> <span>Line</span> <span></span> <span>On</span> <span>The</span> <span>Line</span>: <span>How</span> <span>Schooling</span>, <span>Housing</span>, and <span>Civil</span> <span>Rights</span> <span>Shaped</span> <span>Hartford</span> and its <span>Suburbs</span></em>. <a href="http://ontheline.trincoll.edu/">http://ontheline.trincoll.edu/</a>
+<div id="references" class="section level3" number="2.2.8">
+<h3><span class="header-section-number">2.2.8</span> References</h3>
+<p>We opened this lesson by examining the YAML matter. In it were three specifications that pointed to a references style sheet, a .bib file from Zotero, and an instruction to link references.</p>
+<p>Also necessary for including references is to install the <em>citr</em> package. This will add tool to the “Addins” dropdown menu in the center, top of your screen.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="formatting-the-book.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;citr&quot;)</span></span></code></pre></div>
+<p>References can be added by</p>
+<ul>
+<li>Selecting “Addins” dropdown menu (top)</li>
+<li>Selecting “Insert Citation” from the dropdown menu</li>
+<li>Selecting one or more references that you would like to include</li>
+</ul>
+<p>Throughout this I have been referencing the R Markdown Cookbook and Authoring Books with R Markdown
+<span class="citation">(<a href="#ref-xie_r_2021" role="doc-biblioref">Xie et al., 2021</a>; <a href="#ref-xie_authoring_2021" role="doc-biblioref">Xie, 2021</a>)</span>. I can select them both in a single list and R Markdown will format them properly</p>
+<p>If I wish to reference an a work by the author’s name, say, Navarro <span class="citation">(<a href="#ref-navarro_book_2020" role="doc-biblioref">2020</a>)</span> I can add a dash in front of the reference and only the date will appear in the rendered book.</p>
+<p>A reference list will appear at the end of the chapter and an entire reference list will appear at the end of the book. For this reason, you may wish to conclude the last chapter with an unnumbered chapter heading (in my case a single hashtagged heading, written in ALLCAPS, with the number suppressed).</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="formatting-the-book.html#cb20-1" aria-hidden="true" tabindex="-1"></a>Throughout this I have been referencing the R Markdown Cookbook and Authoring Books with R Markdown [<span class="sc">@</span>xie_authoring_2021; <span class="sc">@</span>xie_r_2021]. </span>
+<span id="cb20-2"><a href="formatting-the-book.html#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="formatting-the-book.html#cb20-3" aria-hidden="true" tabindex="-1"></a>If I wish to reference an a work by the author<span class="st">&#39;s name, say, Navarro [-@navarro_book_2020] I can add a dash in front of the reference and only the date will appear in the rendered book.</span></span></code></pre></div>
 </div>
-<div class="csl-entry">
-Field, A. P. (2012). <em>Discovering statistics using <span>R</span></em>. Sage.
-</div>
-<div class="csl-entry">
-Green, S. B., &amp; Salkind, N. J. (2014). <em>Using <span>SPSS</span> for <span>Windows</span> and <span>Macintosh</span>: Analyzing and understanding data</em> (Seventh edition.). Pearson.
-</div>
-<div class="csl-entry">
-Jhangiani, R. S., Chiang, I.-C. A., Cuttler, C., &amp; Leighton, D. C. (2019). <em>Research <span>Methods</span> in <span>Psychology</span></em>. <a href="https://doi.org/10.17605/OSF.IO/HF7DQ">https://doi.org/10.17605/OSF.IO/HF7DQ</a>
-</div>
-<div class="csl-entry">
-Mallinckrodt, B., Miles, J. R., &amp; Levy, J. J. (2014). The scientist-practitioner-advocate model: <span>Addressing</span> contemporary training needs for social justice advocacy. <em>Training and Education in Professional Psychology</em>, <em>8</em>(4), 303–311. <a href="https://doi.org/10.1037/tep0000045">https://doi.org/10.1037/tep0000045</a>
-</div>
-<div class="csl-entry">
-Navarro, D. (2020). <em>Book: <span>Learning</span> <span>Statistics</span> with <span>R</span> - <span>A</span> tutorial for <span>Psychology</span> <span>Students</span> and other <span>Beginners</span></em>. Open Education Resource (OER) LibreTexts Project. <a href="https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)">https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)</a>
-</div>
-<div class="csl-entry">
-Xie, Y. (2021). <em>Authoring <span>Books</span> and <span>Technical</span> <span>Documents</span> with <span>R</span> <span>Markdown</span></em>. <a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a>
-</div>
-<div class="csl-entry">
-Xie, Y., Dervieux, C., &amp; Riederer, E. (2021). <em>R <span>Markdown</span> <span>Cookbook</span></em>. <a href="https://bookdown.org/yihui/rmarkdown-cookbook/">https://bookdown.org/yihui/rmarkdown-cookbook/</a>
+<div id="how-did-you-do-that" class="section level3" number="2.2.9">
+<h3><span class="header-section-number">2.2.9</span> How did you do that?</h3>
+<p>I’ve been doing this for just long enough to still be learning and updating, but also long enough to not recognize when something might be tricky for others.</p>
+<p>If you have processes that are more efficient or effective than mine, I invite you to send an e-mail with your solutions.</p>
+<p>If you see that I have done something that is unfamiliar to you, please let me know and I will consider adding another section to this perpetually-in-progress project.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-<h3>References</h3>
+<h3>REFERENCES</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-dougherty_chapter_2021" class="csl-entry">
 Dougherty, J. (2021). <em>Chapter 9 <span>Mapping</span> and <span>Publishing</span> <span>On</span> <span>The</span> <span>Line</span> <span></span> <span>On</span> <span>The</span> <span>Line</span>: <span>How</span> <span>Schooling</span>, <span>Housing</span>, and <span>Civil</span> <span>Rights</span> <span>Shaped</span> <span>Hartford</span> and its <span>Suburbs</span></em>. <a href="http://ontheline.trincoll.edu/">http://ontheline.trincoll.edu/</a>
@@ -478,8 +476,8 @@ Xie, Y., Dervieux, C., &amp; Riederer, E. (2021). <em>R <span>Markdown</span> <s
           </div>
         </div>
       </div>
-<a href="book1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="book1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

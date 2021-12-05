@@ -643,7 +643,7 @@ Before uploading the imagine, I created a single image (from the four photos) an
 \end{figure}
 
 \hypertarget{creating-a-table-from-within-the-.rmd-file}{%
-\subsection{Creating a Table from within the .rmd file}\label{creating-a-table-from-within-the-.rmd-file}}
+\subsection{Creating a table from within the .rmd file}\label{creating-a-table-from-within-the-.rmd-file}}
 
 Often times we will use packages to create, present, and imbed tables and figures as we conduct the statistical analysis. At other times, we may wish to create a table without an external dataset. I do this in nearly every ReCentering Psych Stats chapter when I create the grading rubric. At other times, I may create a table to facilitate comprehension of a statistical concept. Here is a the classic table used to convey the relationship between Type I and Type II error.
 
@@ -760,9 +760,62 @@ A LaTeX equation is imbedded in the \emph{F} string to properly format the eta-s
 \end{Shaded}
 
 \hypertarget{building-and-knitting}{%
-\subsection{Building and Knitting}\label{building-and-knitting}}
+\subsection{Building and knitting}\label{building-and-knitting}}
 
 The build process was described in the From \emph{bookdown} to GitHub Pages\{\#book1\} chapter. Especially when the projects are statistically oriented, building a book can take some time. If you would like a quick check of a particular .rmd file consider a quick \emph{Knit}. This is an easy way to check your work and make corrections.
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+We opened this lesson by examining the YAML matter. In it were three specifications that pointed to a references style sheet, a .bib file from Zotero, and an instruction to link references.
+
+Also necessary for including references is to install the \emph{citr} package. This will add tool to the ``Addins'' dropdown menu in the center, top of your screen.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#install.packages("citr")}
+\end{Highlighting}
+\end{Shaded}
+
+References can be added by
+
+\begin{itemize}
+\tightlist
+\item
+  Selecting ``Addins'' dropdown menu (top)
+\item
+  Selecting ``Insert Citation'' from the dropdown menu
+\item
+  Selecting one or more references that you would like to include
+\end{itemize}
+
+Throughout this I have been referencing the R Markdown Cookbook and Authoring Books with R Markdown
+\citep{xie_r_2021, xie_authoring_2021}. I can select them both in a single list and R Markdown will format them properly
+
+If I wish to reference an a work by the author's name, say, Navarro \citeyearpar{navarro_book_2020} I can add a dash in front of the reference and only the date will appear in the rendered book.
+
+A reference list will appear at the end of the chapter and an entire reference list will appear at the end of the book. For this reason, you may wish to conclude the last chapter with an unnumbered chapter heading (in my case a single hashtagged heading, written in ALLCAPS, with the number suppressed).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Throughout this I have been referencing the R Markdown Cookbook and Authoring Books with R Markdown [}\SpecialCharTok{@}\NormalTok{xie\_authoring\_2021; }\SpecialCharTok{@}\NormalTok{xie\_r\_2021]. }
+
+\NormalTok{If I wish to reference an a work by the author}\StringTok{\textquotesingle{}s name, say, Navarro [{-}@navarro\_book\_2020] I can add a dash in front of the reference and only the date will appear in the rendered book.}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{how-did-you-do-that}{%
+\subsection{How did you do that?}\label{how-did-you-do-that}}
+
+I've been doing this for just long enough to still be learning and updating, but also long enough to not recognize when something might be tricky for others.
+
+If you have processes that are more efficient or effective than mine, I invite you to send an e-mail with your solutions.
+
+If you see that I have done something that is unfamiliar to you, please let me know and I will consider adding another section to this perpetually-in-progress project.
+
+\hypertarget{references-1}{%
+\chapter*{REFERENCES}\label{references-1}}
+\addcontentsline{toc}{chapter}{REFERENCES}
 
   \bibliography{STATSnMETH.bib}
 

@@ -17,3 +17,5 @@ adding-images
 creating-a-table-from-within-the-.rmd-file
 equations
 building-and-knitting
+references
+how-did-you-do-that
