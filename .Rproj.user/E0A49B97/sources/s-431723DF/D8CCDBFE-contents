@@ -1,16 +1,17 @@
 --- 
 title: "ReCentering Psych Stats: extRas"
 author: "Lynette H. Bikos, PhD, ABPP"
-date: "`r Sys.Date()`"
+date: "`r format (Sys.Date(), '%d %b %Y')`" 
 site: bookdown::bookdown_site
 documentclass: book
+citation-style: apa-single-spaced.csl #if you want APA style
 bibliography: STATSnMETH.bib #This is my own bibtex file from my Zotero account. If this file is not in the project folder there will be an error and the book will not build.
-url: https://lhbikos.github.io/extRas/ #a link to the GitHub pages where it is rencered
+link-citations: yes
+url: https://lhbikos.github.io/extRas/ #a link to the GitHub pages where it is rendered
 cover-image: images/ReCenterPsychStats-extRas-bookcover.png #link to the image for the book however I don't think this did anything
 description: |
   "extRas" is a mini-volume in the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily in the regular volumes (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting in that they have a specific use-case for graduate students in psychology programs at our institution.
-link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: lhbikos/extRas
 ---
 
 # BOOK COVER {-}

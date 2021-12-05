@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://lhbikos.github.io/extRas/" />
   <meta property="og:image" content="https://lhbikos.github.io/extRas/images/ReCenterPsychStats-extRas-bookcover.png" />
   <meta property="og:description" content="“extRas” is a mini-volume in the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily in the regular volumes (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting in that they have a specific use-case for graduate students in psychology programs at our institution." />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta name="github-repo" content="lhbikos/extRas" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="ACKNOWLEDGEMENTS | ReCentering Psych Stats: extRas" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Lynette H. Bikos, PhD, ABPP" />
 
 
-<meta name="date" content="2021-12-03" />
+<meta name="date" content="2021-12-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="preface.html"/>
-<link rel="next" href="the-mechanics-behind-the-oer.html"/>
+<link rel="next" href="the-mechanics-behind-recentering.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -165,7 +165,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#copyright-with-open-access"><i class="fa fa-check"></i>Copyright with Open Access</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>ACKNOWLEDGEMENTS</a></li>
-<li class="chapter" data-level="" data-path="the-mechanics-behind-the-oer.html"><a href="the-mechanics-behind-the-oer.html"><i class="fa fa-check"></i>THE MECHANICS BEHIND THE OER</a></li>
+<li class="chapter" data-level="" data-path="the-mechanics-behind-recentering.html"><a href="the-mechanics-behind-recentering.html"><i class="fa fa-check"></i>THE MECHANICS BEHIND RECENTERING</a></li>
 <li class="chapter" data-level="1" data-path="book1.html"><a href="book1.html"><i class="fa fa-check"></i><b>1</b> From <em>bookdown</em> to GitHub Pages</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="book1.html"><a href="book1.html#creating-a-bookdown-template"><i class="fa fa-check"></i><b>1.1</b> Creating a <em>bookdown</em> template</a></li>
@@ -174,6 +174,19 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="book1.html"><a href="book1.html#build-the-book"><i class="fa fa-check"></i><b>1.4</b> Build the Book!</a></li>
 <li class="chapter" data-level="1.5" data-path="book1.html"><a href="book1.html#send-it-to-the-github"><i class="fa fa-check"></i><b>1.5</b> Send it to the GitHub</a></li>
 <li class="chapter" data-level="1.6" data-path="book1.html"><a href="book1.html#publish-on-github-pages"><i class="fa fa-check"></i><b>1.6</b> Publish on GitHub Pages</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="formatting-the-book.html"><a href="formatting-the-book.html"><i class="fa fa-check"></i><b>2</b> Formatting the Book</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="formatting-the-book.html"><a href="formatting-the-book.html#the-yaml-matter-atop-the-index.rmd"><i class="fa fa-check"></i><b>2.1</b> The YAML matter atop the <em>index.Rmd</em></a></li>
+<li class="chapter" data-level="2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#my-go-to-formatting-tools"><i class="fa fa-check"></i><b>2.2</b> My Go-To Formatting Tools</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="formatting-the-book.html"><a href="formatting-the-book.html#chapter-numbering"><i class="fa fa-check"></i><b>2.2.1</b> Chapter numbering</a></li>
+<li class="chapter" data-level="2.2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#bulleted-and-numbered-lists"><i class="fa fa-check"></i><b>2.2.2</b> Bulleted and numbered lists</a></li>
+<li class="chapter" data-level="2.2.3" data-path="formatting-the-book.html"><a href="formatting-the-book.html#text-emphasis"><i class="fa fa-check"></i><b>2.2.3</b> Text emphasis</a></li>
+<li class="chapter" data-level="2.2.4" data-path="formatting-the-book.html"><a href="formatting-the-book.html#adding-images"><i class="fa fa-check"></i><b>2.2.4</b> Adding images</a></li>
+<li class="chapter" data-level="2.2.5" data-path="formatting-the-book.html"><a href="formatting-the-book.html#creating-a-table-from-within-the-.rmd-file"><i class="fa fa-check"></i><b>2.2.5</b> Creating a Table from within the .rmd file</a></li>
+<li class="chapter" data-level="2.2.6" data-path="formatting-the-book.html"><a href="formatting-the-book.html#equations"><i class="fa fa-check"></i><b>2.2.6</b> Equations</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -197,7 +210,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="acknowledgements" class="section level1 unnumbered">
 <h1>ACKNOWLEDGEMENTS</h1>
-<p>As a doctoral student at the University of Kansas (1992-2005), I learned that “a foreign language” was a graduation requirement. <em>Please note that as one who studies the intersections of global, vocational, and sustainable psychology, I regret that I do not have language skills beyond English.</em> This could have been met with credit from high school my rural, mid-Missouri high school did not offer such classes. This requirement would have typically been met with courses taken during an undergraduate program – but my non-teaching degree in the University of Missouri’s School of Education was exempt from this. The requirement could have also been met with a computer language (fortran, C++) – I did not have any of those either. There was a tiny footnote on my doctoral degree plan that indicated that a 2-credit course, “SPSS for Windows” would substitute for the language requirement. Given that it was taught by my one of my favorite professors, I readily signed up. As it turns out, Samuel B. Green, PhD, was using the course to draft chapters in the textbook <span class="citation">(<a href="#ref-green_using_2014" role="doc-biblioref">Green and Salkind 2014</a>)</span> that has been so helpful for so many. Unfortunately, Drs. Green (1947 - 2018) and Salkind (2947 - 2017) are no longer with us. I have worn out numerous versions of their text. Another favorite text of mine was Dr. Barbara Byrne’s <span class="citation">(<a href="#ref-byrne_structural_2016" role="doc-biblioref">2016</a>)</span>, “Structural Equation Modeling with AMOS.” I loved the way she worked through each problem and paired it with a published journal article, so that the user could see how the statistical evaluation fit within the larger project/article. I took my tea-stained text with me to a workshop she taught at APA and was proud of the signature she added to it (a little catfur might have fallen out). Dr. Byrne created SEM texts for a number of statistical programs (e.g., LISREL, EQS, MPlus). As I was learning R, I wrote Dr. Byrne, asking if she had an edition teaching SEM/CFA with R. She promptly wrote back, saying that she did not have the bandwidth to learn a new statistics package. We lost Dr. Byrne in December 2020. I am so grateful to these role models for their contributions to my statistical training. I am also grateful for the doctoral students who have taken my courses and are continuing to provide input for how to improve the materials.</p>
+<p>As a doctoral student at the University of Kansas (1992-2005), I learned that “a foreign language” was a graduation requirement. <em>Please note that as one who studies the intersections of global, vocational, and sustainable psychology, I regret that I do not have language skills beyond English.</em> This could have been met with credit from high school my rural, mid-Missouri high school did not offer such classes. This requirement would have typically been met with courses taken during an undergraduate program – but my non-teaching degree in the University of Missouri’s School of Education was exempt from this. The requirement could have also been met with a computer language (fortran, C++) – I did not have any of those either. There was a tiny footnote on my doctoral degree plan that indicated that a 2-credit course, “SPSS for Windows” would substitute for the language requirement. Given that it was taught by my one of my favorite professors, I readily signed up. As it turns out, Samuel B. Green, PhD, was using the course to draft chapters in the textbook <span class="citation">(<a href="#ref-green_using_2014" role="doc-biblioref">Green &amp; Salkind, 2014</a>)</span> that has been so helpful for so many. Unfortunately, Drs. Green (1947 - 2018) and Salkind (2947 - 2017) are no longer with us. I have worn out numerous versions of their text. Another favorite text of mine was Dr. Barbara Byrne’s <span class="citation">(<a href="#ref-byrne_structural_2016" role="doc-biblioref">2016</a>)</span>, “Structural Equation Modeling with AMOS.” I loved the way she worked through each problem and paired it with a published journal article, so that the user could see how the statistical evaluation fit within the larger project/article. I took my tea-stained text with me to a workshop she taught at APA and was proud of the signature she added to it (a little catfur might have fallen out). Dr. Byrne created SEM texts for a number of statistical programs (e.g., LISREL, EQS, MPlus). As I was learning R, I wrote Dr. Byrne, asking if she had an edition teaching SEM/CFA with R. She promptly wrote back, saying that she did not have the bandwidth to learn a new statistics package. We lost Dr. Byrne in December 2020. I am so grateful to these role models for their contributions to my statistical training. I am also grateful for the doctoral students who have taken my courses and are continuing to provide input for how to improve the materials.</p>
 <p>The inspiration for training materials that re*center statistics and research methods came from the <a href="https://www.academics4blacklives.com/">Academics for Black Survival and Wellness Initiative</a>. This project, co-founded by Della V. Mosley, Ph.D., and Pearis L. Bellamy, M.S., made clear the necessity and urgency for change in higher education and the profession of psychology.</p>
 <p>At very practical levels, I am indebted to SPU’s Library, and more specifically, SPU’s Education, Technology, and Media Department. Assistant Dean for Instructional Design and Emerging Technologies, R. John Robertson, MSc, MCS, has offered unlimited consultation, support, and connection. Senior Instructional Designer in Graphics &amp; Illustrations, Dominic Wilkinson, designed the logo and bookcover. Psychology and Scholarly Communications Librarian, Kristin Hoffman, MLIS, has provided consultation on topics ranging from OERS to citations. I am alo indebted to Associate Vice President, Teaching and Learning at Kwantlen Polytechnic University, Rajiv Jhangiani, PhD. Dr. Jhangiani’s text <span class="citation">(<a href="#ref-jhangiani_research_2019" role="doc-biblioref">2019</a>)</span> was the first OER I ever used and I was grateful for his encouraging conversation.</p>
 <p>Financial support for this project has been provided the following:</p>
@@ -211,13 +224,13 @@ div.csl-indent {
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-byrne_structural_2016" class="csl-entry">
-Byrne, Barbara M. 2016. <span>“Structural <span>Equation</span> <span>Modeling</span>: <span>The</span> Basics (<span>Chapter</span> 1).”</span> In <em>Structural <span>Equation</span> <span>Modeling</span> with <span>AMOS</span>: <span>Basic</span> <span>Concepts</span>, <span>Applications</span>, and <span>Programming</span>, <span>Third</span> <span>Edition</span></em>. London, UNITED KINGDOM: Taylor &amp; Francis Group. <a href="http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523">http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523</a>.
+Byrne, B. M. (2016). Structural <span>Equation</span> <span>Modeling</span>: <span>The</span> basics (<span>Chapter</span> 1). In <em>Structural <span>Equation</span> <span>Modeling</span> with <span>AMOS</span>: <span>Basic</span> <span>Concepts</span>, <span>Applications</span>, and <span>Programming</span>, <span>Third</span> <span>Edition</span></em>. Taylor &amp; Francis Group. <a href="http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523">http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523</a>
 </div>
 <div id="ref-green_using_2014" class="csl-entry">
-Green, Samuel B., and Neil J. Salkind. 2014. <em>Using <span>SPSS</span> for <span>Windows</span> and <span>Macintosh</span>: Analyzing and Understanding Data</em>. Seventh edition. Boston: Pearson.
+Green, S. B., &amp; Salkind, N. J. (2014). <em>Using <span>SPSS</span> for <span>Windows</span> and <span>Macintosh</span>: Analyzing and understanding data</em> (Seventh edition.). Pearson.
 </div>
 <div id="ref-jhangiani_research_2019" class="csl-entry">
-Jhangiani, Rajiv S., I.-Chant A. Chiang, Carrie Cuttler, and Dana C. Leighton. 2019. <em>Research <span>Methods</span> in <span>Psychology</span></em>. <a href="https://doi.org/10.17605/OSF.IO/HF7DQ">https://doi.org/10.17605/OSF.IO/HF7DQ</a>.
+Jhangiani, R. S., Chiang, I.-C. A., Cuttler, C., &amp; Leighton, D. C. (2019). <em>Research <span>Methods</span> in <span>Psychology</span></em>. <a href="https://doi.org/10.17605/OSF.IO/HF7DQ">https://doi.org/10.17605/OSF.IO/HF7DQ</a>
 </div>
 </div>
             </section>
@@ -226,7 +239,7 @@ Jhangiani, Rajiv S., I.-Chant A. Chiang, Carrie Cuttler, and Dana C. Leighton. 2
         </div>
       </div>
 <a href="preface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-mechanics-behind-the-oer.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-mechanics-behind-recentering.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -280,6 +293,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

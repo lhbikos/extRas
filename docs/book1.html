@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://lhbikos.github.io/extRas/" />
   <meta property="og:image" content="https://lhbikos.github.io/extRas/images/ReCenterPsychStats-extRas-bookcover.png" />
   <meta property="og:description" content="“extRas” is a mini-volume in the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily in the regular volumes (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting in that they have a specific use-case for graduate students in psychology programs at our institution." />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta name="github-repo" content="lhbikos/extRas" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 1 From bookdown to GitHub Pages | ReCentering Psych Stats: extRas" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Lynette H. Bikos, PhD, ABPP" />
 
 
-<meta name="date" content="2021-12-03" />
+<meta name="date" content="2021-12-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-mechanics-behind-the-oer.html"/>
-
+<link rel="prev" href="the-mechanics-behind-recentering.html"/>
+<link rel="next" href="formatting-the-book.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -165,7 +165,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#copyright-with-open-access"><i class="fa fa-check"></i>Copyright with Open Access</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>ACKNOWLEDGEMENTS</a></li>
-<li class="chapter" data-level="" data-path="the-mechanics-behind-the-oer.html"><a href="the-mechanics-behind-the-oer.html"><i class="fa fa-check"></i>THE MECHANICS BEHIND THE OER</a></li>
+<li class="chapter" data-level="" data-path="the-mechanics-behind-recentering.html"><a href="the-mechanics-behind-recentering.html"><i class="fa fa-check"></i>THE MECHANICS BEHIND RECENTERING</a></li>
 <li class="chapter" data-level="1" data-path="book1.html"><a href="book1.html"><i class="fa fa-check"></i><b>1</b> From <em>bookdown</em> to GitHub Pages</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="book1.html"><a href="book1.html#creating-a-bookdown-template"><i class="fa fa-check"></i><b>1.1</b> Creating a <em>bookdown</em> template</a></li>
@@ -174,6 +174,19 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="book1.html"><a href="book1.html#build-the-book"><i class="fa fa-check"></i><b>1.4</b> Build the Book!</a></li>
 <li class="chapter" data-level="1.5" data-path="book1.html"><a href="book1.html#send-it-to-the-github"><i class="fa fa-check"></i><b>1.5</b> Send it to the GitHub</a></li>
 <li class="chapter" data-level="1.6" data-path="book1.html"><a href="book1.html#publish-on-github-pages"><i class="fa fa-check"></i><b>1.6</b> Publish on GitHub Pages</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="formatting-the-book.html"><a href="formatting-the-book.html"><i class="fa fa-check"></i><b>2</b> Formatting the Book</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="formatting-the-book.html"><a href="formatting-the-book.html#the-yaml-matter-atop-the-index.rmd"><i class="fa fa-check"></i><b>2.1</b> The YAML matter atop the <em>index.Rmd</em></a></li>
+<li class="chapter" data-level="2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#my-go-to-formatting-tools"><i class="fa fa-check"></i><b>2.2</b> My Go-To Formatting Tools</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="formatting-the-book.html"><a href="formatting-the-book.html#chapter-numbering"><i class="fa fa-check"></i><b>2.2.1</b> Chapter numbering</a></li>
+<li class="chapter" data-level="2.2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#bulleted-and-numbered-lists"><i class="fa fa-check"></i><b>2.2.2</b> Bulleted and numbered lists</a></li>
+<li class="chapter" data-level="2.2.3" data-path="formatting-the-book.html"><a href="formatting-the-book.html#text-emphasis"><i class="fa fa-check"></i><b>2.2.3</b> Text emphasis</a></li>
+<li class="chapter" data-level="2.2.4" data-path="formatting-the-book.html"><a href="formatting-the-book.html#adding-images"><i class="fa fa-check"></i><b>2.2.4</b> Adding images</a></li>
+<li class="chapter" data-level="2.2.5" data-path="formatting-the-book.html"><a href="formatting-the-book.html#creating-a-table-from-within-the-.rmd-file"><i class="fa fa-check"></i><b>2.2.5</b> Creating a Table from within the .rmd file</a></li>
+<li class="chapter" data-level="2.2.6" data-path="formatting-the-book.html"><a href="formatting-the-book.html#equations"><i class="fa fa-check"></i><b>2.2.6</b> Equations</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -273,23 +286,7 @@ output_dir: “docs”</p>
 </ul>
 <p>After a few minutes, your webpage will be available at the website that was provided on the setup for GitHub Pages. It will look like: <a href="https:/YOURACCOUNT.github.io/YOURPROJECT/" class="uri">https:/YOURACCOUNT.github.io/YOURPROJECT/</a></p>
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div class="csl-entry">
-Byrne, Barbara M. 2016. <span>“Structural <span>Equation</span> <span>Modeling</span>: <span>The</span> Basics (<span>Chapter</span> 1).”</span> In <em>Structural <span>Equation</span> <span>Modeling</span> with <span>AMOS</span>: <span>Basic</span> <span>Concepts</span>, <span>Applications</span>, and <span>Programming</span>, <span>Third</span> <span>Edition</span></em>. London, UNITED KINGDOM: Taylor &amp; Francis Group. <a href="http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523">http://ebookcentral.proquest.com/lib/spu/detail.action?docID=4556523</a>.
-</div>
-<div class="csl-entry">
-Field, Andy P. 2012. <em>Discovering Statistics Using <span>R</span></em>. Thousand Oaks, California: Sage.
-</div>
-<div class="csl-entry">
-Green, Samuel B., and Neil J. Salkind. 2014. <em>Using <span>SPSS</span> for <span>Windows</span> and <span>Macintosh</span>: Analyzing and Understanding Data</em>. Seventh edition. Boston: Pearson.
-</div>
-<div class="csl-entry">
-Jhangiani, Rajiv S., I.-Chant A. Chiang, Carrie Cuttler, and Dana C. Leighton. 2019. <em>Research <span>Methods</span> in <span>Psychology</span></em>. <a href="https://doi.org/10.17605/OSF.IO/HF7DQ">https://doi.org/10.17605/OSF.IO/HF7DQ</a>.
-</div>
-<div class="csl-entry">
-Mallinckrodt, Brent, Joseph R. Miles, and Jacob J. Levy. 2014. <span>“The Scientist-Practitioner-Advocate Model: <span>Addressing</span> Contemporary Training Needs for Social Justice Advocacy.”</span> <em>Training and Education in Professional Psychology</em> 8 (4): 303–11. <a href="https://doi.org/10.1037/tep0000045">https://doi.org/10.1037/tep0000045</a>.
-</div>
-</div>
+<p><a href="link">Screencast Link</a></p>
 </div>
 </div>
             </section>
@@ -297,8 +294,8 @@ Mallinckrodt, Brent, Joseph R. Miles, and Jacob J. Levy. 2014. <span>“The Scie
           </div>
         </div>
       </div>
-<a href="the-mechanics-behind-the-oer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="the-mechanics-behind-recentering.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="formatting-the-book.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -352,6 +349,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

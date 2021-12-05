@@ -13603,6 +13603,73 @@
             "title-short": "<b>Mediation</b>",
             "type": "article-journal",
             "volume": "59"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/rmarkdown-cookbook/",
+            "abstract": "This book showcases short, practical examples of lesser-known tips and tricks to helps users get the most out of these tools. After reading this book, you will understand how R Markdown documents are transformed from plain text and how you may customize nearly every step of this processing. For example, you will learn how to dynamically create content from R code, reference code in other documents or chunks, control the formatting with customer templates, fine-tune how your code is processed, and incorporate multiple languages into your analysis.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2021,
+                        12,
+                        4
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Riederer",
+                    "given": "Emily"
+                }
+            ],
+            "id": "xie_r_2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "R Markdown Cookbook",
+            "type": "book"
+        },
+        {
+            "URL": "https://bookdown.org/yihui/bookdown/",
+            "abstract": "A guide to authoring books with R Markdown, including how to generate figures and tables, and insert cross-references, citations, HTML widgets, and Shiny apps in R Markdown. The book can be exported to HTML, PDF, and e-books (e.g. EPUB). The book style is customizable. You can easily write and preview the book in RStudio IDE or other editors, and host the book wherever you want (e.g. bookdown.org).",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2021,
+                        12,
+                        4
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "xie_authoring_2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Authoring Books and Technical Documents with R Markdown",
+            "title-short": "5.4 RStudio IDE  bookdown",
+            "type": "book"
         }
     ],
     "project_biblios": [

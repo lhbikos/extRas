@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://lhbikos.github.io/extRas/" />
   <meta property="og:image" content="https://lhbikos.github.io/extRas/images/ReCenterPsychStats-extRas-bookcover.png" />
   <meta property="og:description" content="“extRas” is a mini-volume in the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily in the regular volumes (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting in that they have a specific use-case for graduate students in psychology programs at our institution." />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta name="github-repo" content="lhbikos/extRas" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="PREFACE | ReCentering Psych Stats: extRas" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Lynette H. Bikos, PhD, ABPP" />
 
 
-<meta name="date" content="2021-12-03" />
+<meta name="date" content="2021-12-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -165,7 +165,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#copyright-with-open-access"><i class="fa fa-check"></i>Copyright with Open Access</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>ACKNOWLEDGEMENTS</a></li>
-<li class="chapter" data-level="" data-path="the-mechanics-behind-the-oer.html"><a href="the-mechanics-behind-the-oer.html"><i class="fa fa-check"></i>THE MECHANICS BEHIND THE OER</a></li>
+<li class="chapter" data-level="" data-path="the-mechanics-behind-recentering.html"><a href="the-mechanics-behind-recentering.html"><i class="fa fa-check"></i>THE MECHANICS BEHIND RECENTERING</a></li>
 <li class="chapter" data-level="1" data-path="book1.html"><a href="book1.html"><i class="fa fa-check"></i><b>1</b> From <em>bookdown</em> to GitHub Pages</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="book1.html"><a href="book1.html#creating-a-bookdown-template"><i class="fa fa-check"></i><b>1.1</b> Creating a <em>bookdown</em> template</a></li>
@@ -174,6 +174,19 @@ div.csl-indent {
 <li class="chapter" data-level="1.4" data-path="book1.html"><a href="book1.html#build-the-book"><i class="fa fa-check"></i><b>1.4</b> Build the Book!</a></li>
 <li class="chapter" data-level="1.5" data-path="book1.html"><a href="book1.html#send-it-to-the-github"><i class="fa fa-check"></i><b>1.5</b> Send it to the GitHub</a></li>
 <li class="chapter" data-level="1.6" data-path="book1.html"><a href="book1.html#publish-on-github-pages"><i class="fa fa-check"></i><b>1.6</b> Publish on GitHub Pages</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="formatting-the-book.html"><a href="formatting-the-book.html"><i class="fa fa-check"></i><b>2</b> Formatting the Book</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="formatting-the-book.html"><a href="formatting-the-book.html#the-yaml-matter-atop-the-index.rmd"><i class="fa fa-check"></i><b>2.1</b> The YAML matter atop the <em>index.Rmd</em></a></li>
+<li class="chapter" data-level="2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#my-go-to-formatting-tools"><i class="fa fa-check"></i><b>2.2</b> My Go-To Formatting Tools</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="formatting-the-book.html"><a href="formatting-the-book.html#chapter-numbering"><i class="fa fa-check"></i><b>2.2.1</b> Chapter numbering</a></li>
+<li class="chapter" data-level="2.2.2" data-path="formatting-the-book.html"><a href="formatting-the-book.html#bulleted-and-numbered-lists"><i class="fa fa-check"></i><b>2.2.2</b> Bulleted and numbered lists</a></li>
+<li class="chapter" data-level="2.2.3" data-path="formatting-the-book.html"><a href="formatting-the-book.html#text-emphasis"><i class="fa fa-check"></i><b>2.2.3</b> Text emphasis</a></li>
+<li class="chapter" data-level="2.2.4" data-path="formatting-the-book.html"><a href="formatting-the-book.html#adding-images"><i class="fa fa-check"></i><b>2.2.4</b> Adding images</a></li>
+<li class="chapter" data-level="2.2.5" data-path="formatting-the-book.html"><a href="formatting-the-book.html#creating-a-table-from-within-the-.rmd-file"><i class="fa fa-check"></i><b>2.2.5</b> Creating a Table from within the .rmd file</a></li>
+<li class="chapter" data-level="2.2.6" data-path="formatting-the-book.html"><a href="formatting-the-book.html#equations"><i class="fa fa-check"></i><b>2.2.6</b> Equations</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -197,11 +210,11 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="preface" class="section level1 unnumbered">
 <h1>PREFACE</h1>
-<p><strong>If you are viewing this document, you should know that this is a book-in-progress. Early drafts are released for the purpose teaching my classes and gaining formative feedback from a host of stakeholders. The document was last updated on 03 Dec 2021</strong>. Emerging volumes on other statistics are posted on the <a href="https://lhbikos.github.io/BikosRVT/ReCenter.html">ReCentering Psych Stats</a> page at my research team’s website.</p>
+<p><strong>If you are viewing this document, you should know that this is a book-in-progress. Early drafts are released for the purpose teaching my classes and gaining formative feedback from a host of stakeholders. The document was last updated on 04 Dec 2021</strong>. Emerging volumes on other statistics are posted on the <a href="https://lhbikos.github.io/BikosRVT/ReCenter.html">ReCentering Psych Stats</a> page at my research team’s website.</p>
 <p><a href="https://spu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c932455e-ef06-444a-bdca-acf7012d759a">Screencasted Lecture Link</a></p>
 <p>To <em>center</em> a variable in regression means to set its value at zero and interpret all other values in relation to this reference point. Regarding race and gender, researchers often center male and White at zero. Further, it is typical that research vignettes in statistics textbooks are similarly seated in a White, Western (frequently U.S.), heteronormative, framework. The purpose of this project is to create a set of open educational resources (OER) appropriate for doctoral and post-doctoral training that contribute to a socially responsive pedagogy – that is, it contributes to justice, equity, diversity, and inclusion.</p>
 <p>Statistics training in doctoral programs are frequently taught with fee-for-use programs (e.g., SPSS/AMOS, SAS, MPlus) that may not be readily available to the post-doctoral professional. In recent years, there has been an increase and improvement in R packages (e.g., <em>psych</em>, <em>lavaan</em>) used for in analyses common to psychological research. Correspondingly, many graduate programs are transitioning to statistics training in R (free and open source). This is a challenge for post-doctoral psychologists who were trained with other software. This OER will offer statistics training with R and be freely available (specifically in a GitHub respository and posted through GitHub Pages) under a Creative Commons Attribution - Non Commercial - Share Alike license [CC BY-NC-SA 4.0].</p>
-<p>Training models for doctoral programs in HSP are commonly scholar-practitioner, scientist-practitioner, or clinical-scientist. An emerging model, the <em>scientist-practitioner-advocacy</em> training model incorporates social justice advocacy so that graduates are equipped to recognize and address the sociocultural context of oppression and unjust distribution of resources and opportunities <span class="citation">(<a href="#ref-mallinckrodt_scientist-practitioner-advocate_2014" role="doc-biblioref">Mallinckrodt, Miles, and Levy 2014</a>)</span>. In statistics textbooks, the use of research vignettes engages the learner around a tangible scenario for identifying independent variables, dependent variables, covariates, and potential mechanisms of change. Many students recall examples in Field’s <span class="citation">(<a href="#ref-field_discovering_2012" role="doc-biblioref">2012</a>)</span> popular statistics text: Viagra to teach one-way ANOVA, beer goggles for two-way ANOVA, and bushtucker for repeated measures. What if the research vignettes were more socially responsive?</p>
+<p>Training models for doctoral programs in HSP are commonly scholar-practitioner, scientist-practitioner, or clinical-scientist. An emerging model, the <em>scientist-practitioner-advocacy</em> training model incorporates social justice advocacy so that graduates are equipped to recognize and address the sociocultural context of oppression and unjust distribution of resources and opportunities <span class="citation">(<a href="#ref-mallinckrodt_scientist-practitioner-advocate_2014" role="doc-biblioref">Mallinckrodt et al., 2014</a>)</span>. In statistics textbooks, the use of research vignettes engages the learner around a tangible scenario for identifying independent variables, dependent variables, covariates, and potential mechanisms of change. Many students recall examples in Field’s <span class="citation">(<a href="#ref-field_discovering_2012" role="doc-biblioref">2012</a>)</span> popular statistics text: Viagra to teach one-way ANOVA, beer goggles for two-way ANOVA, and bushtucker for repeated measures. What if the research vignettes were more socially responsive?</p>
 <p>In this OER, research vignettes will be from recently published articles where:</p>
 <ul>
 <li>the author’s identity is from a group where scholarship is historically marginalized (e.g., BIPOC, LGBTQ+, LMIC[low-middle income countries]),</li>
@@ -220,10 +233,10 @@ div.csl-indent {
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-field_discovering_2012" class="csl-entry">
-Field, Andy P. 2012. <em>Discovering Statistics Using <span>R</span></em>. Thousand Oaks, California: Sage.
+Field, A. P. (2012). <em>Discovering statistics using <span>R</span></em>. Sage.
 </div>
 <div id="ref-mallinckrodt_scientist-practitioner-advocate_2014" class="csl-entry">
-Mallinckrodt, Brent, Joseph R. Miles, and Jacob J. Levy. 2014. <span>“The Scientist-Practitioner-Advocate Model: <span>Addressing</span> Contemporary Training Needs for Social Justice Advocacy.”</span> <em>Training and Education in Professional Psychology</em> 8 (4): 303–11. <a href="https://doi.org/10.1037/tep0000045">https://doi.org/10.1037/tep0000045</a>.
+Mallinckrodt, B., Miles, J. R., &amp; Levy, J. J. (2014). The scientist-practitioner-advocate model: <span>Addressing</span> contemporary training needs for social justice advocacy. <em>Training and Education in Professional Psychology</em>, <em>8</em>(4), 303–311. <a href="https://doi.org/10.1037/tep0000045">https://doi.org/10.1037/tep0000045</a>
 </div>
 </div>
             </section>
@@ -286,6 +299,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

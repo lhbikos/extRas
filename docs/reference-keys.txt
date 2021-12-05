@@ -1,0 +1,16 @@
+book1
+creating-a-bookdown-template
+establishing-an-output-directory-needed-to-publish-on-github-pages
+the-index.rmd-file-is-first
+build-the-book
+send-it-to-the-github
+publish-on-github-pages
+formatting-the-book
+the-yaml-matter-atop-the-index.rmd
+my-go-to-formatting-tools
+chapter-numbering
+bulleted-and-numbered-lists
+text-emphasis
+adding-images
+creating-a-table-from-within-the-.rmd-file
+equations
