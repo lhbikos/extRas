@@ -93,7 +93,9 @@ After a few minutes, your webpage will be available at the website that was prov
 * Brief text is required in the "Summary" box (lower left)
   - It is optional to provide a description. I often leave cryptic summaries and no description.  If, however, there was something significant/meaningful, I would elaborate more.
 * Click "Commit to main"
-* 
+* Click "Push origin" found either in the center of the menu bar or in the middle of the page.
+
+That's it!  Depending on the size of the project/changes, all of the documents in the GitHub Repo and the GitHub Pages repo book will be updated.  From time-to-time you may wish to cull the GitHub repo to remove older documents that may have been created but replaced (because of renaming or something) and are no longer in use.
 
 ## PDF and epub Compilations
 
