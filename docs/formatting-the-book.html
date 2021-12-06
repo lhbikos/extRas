@@ -24,7 +24,7 @@
 <meta name="author" content="Lynette H. Bikos, PhD, ABPP" />
 
 
-<meta name="date" content="2021-12-05" />
+<meta name="date" content="2021-12-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -228,7 +228,7 @@ div.csl-indent {
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="formatting-the-book.html#cb4-1" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">&quot;ReCentering Psych Stats: extRas&quot;</span></span>
 <span id="cb4-2"><a href="formatting-the-book.html#cb4-2" aria-hidden="true" tabindex="-1"></a>author<span class="sc">:</span> <span class="st">&quot;Lynette H. Bikos, PhD, ABPP&quot;</span></span>
 <span id="cb4-3"><a href="formatting-the-book.html#cb4-3" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="st">&quot;`r format (Sys.Date(), &#39;%d %b %Y&#39;)`&quot;</span></span></code></pre></div>
-<p>Title and date are likely obvious. When the date, entered following “r” (using the format: `<code>r</code> `) the date at the time of the knit or build will auto-update, like this: 05 Dec 2021. As might be obvious from the “format” and “%d %b %Y” code, the date can be presented in a variety of structures. More instructions are available in the R Markdown Cookbook <span class="citation">(<a href="#ref-xie_r_2021" role="doc-biblioref">Xie et al., 2021</a>)</span>.</p>
+<p>Title and date are likely obvious. When the date, entered following “r” (using the format: `<code>r</code> `) the date at the time of the knit or build will auto-update, like this: 06 Dec 2021. As might be obvious from the “format” and “%d %b %Y” code, the date can be presented in a variety of structures. More instructions are available in the R Markdown Cookbook <span class="citation">(<a href="#ref-xie_r_2021" role="doc-biblioref">Xie et al., 2021</a>)</span>.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="formatting-the-book.html#cb5-1" aria-hidden="true" tabindex="-1"></a>site<span class="sc">:</span> bookdown<span class="sc">::</span>bookdown_site</span>
 <span id="cb5-2"><a href="formatting-the-book.html#cb5-2" aria-hidden="true" tabindex="-1"></a>documentclass<span class="sc">:</span> book</span></code></pre></div>
 <p>The site and document class commands (and their settings) are the defaults in the bookdown template. They allow RStudio to recognize the directory as a book source directory and it will add the “Build Book” button in the “Build” pane <span class="citation">(<a href="#ref-xie_r_2021" role="doc-biblioref">Xie et al., 2021</a>)</span>.</p>
@@ -244,8 +244,12 @@ div.csl-indent {
 <span id="cb7-3"><a href="formatting-the-book.html#cb7-3" aria-hidden="true" tabindex="-1"></a>description<span class="sc">:</span> <span class="er">|</span></span>
 <span id="cb7-4"><a href="formatting-the-book.html#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;extRas&quot;</span> is a mini<span class="sc">-</span>volume <span class="cf">in</span> the ReCentering Psych Stats series that is devoted to some of the technical tools and processes used that just do not fit easily <span class="cf">in</span> the regular <span class="fu">volumes</span> (e.g., ANOVA, psychometrics, multivariate). The examples and instructions may be somewhat limiting <span class="cf">in</span> that they have a specific use<span class="sc">-</span>case <span class="cf">for</span> graduate students <span class="cf">in</span> psychology programs at our institution.</span>
 <span id="cb7-5"><a href="formatting-the-book.html#cb7-5" aria-hidden="true" tabindex="-1"></a>github<span class="sc">-</span>repo<span class="sc">:</span> lhbikos<span class="sc">/</span>extRas</span></code></pre></div>
-<p>Although I am not presently seeing where these are being utilized, I went with the defaults, adding my own url, cover-image, description, and specification to the GitHub repository. These appear to be optional; the book will render without them. If you are not planning to use citations, you can hashtag them out (keeping them as placeholders for potential use later) or delete them altogether.</p>
-<p>If you include the description, make sure to keep the pipe (|) that occurs immediately after the command.</p>
+<p>The information provided in the <em>url:</em>, <em>cover-image</em>, <em>description</em>, and <em>github-repo</em> elements appears as metadata when its link is posted to the internet. The picture below is an example of how the metadata appeared when I posted a link to its GitHub Pages site to a chat in Microsoft TEAMS.</p>
+<div class="figure">
+<img src="images/preview.png" alt="" />
+<p class="caption">A screenshot of a Microsoft TEAMS message where the direct link, mini-description, cover-image, and link to the GitHub repository are displayed.</p>
+</div>
+<p>The book will build and post without these elements. You can either delete or hashtag them out. If you include the description, make sure to keep the pipe (|) that occurs immediately after the command.</p>
 </div>
 <div id="my-go-to-formatting-tools" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> My Go-To Formatting Tools</h2>
